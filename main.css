@@ -1,0 +1,87 @@
+::-webkit-scrollbar{
+    display: none;
+}
+.bg-dark{
+     /* grandiente */	
+     background: linear-gradient(90deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+     background-size: 400% 100%;
+     animation: Gradient 15s ease infinite;
+}
+.navbar-toggler{
+    border-color: rgba(0,0,0,1);
+    border: none;
+ }
+ .btn-primary{
+    background: linear-gradient(90deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 100%;
+    animation: Gradient 15s ease infinite;
+    border: none;
+}
+.cima{
+    position: relative;
+    width: 100vw;
+    box-shadow: 0 -5px 5px rgba(0,0,0,0.25); /*Sombra Cima*/
+}
+.baixo{
+    position: relative;
+    width: 100vw;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.25);/*sombra baixo*/
+}
+.jheader{
+    height: 91.6vh;
+    width: 100vw;
+    padding: 25vh 10vw;
+    background: gray;
+}
+    .jheader h1,p{
+    padding: 1% auto;
+    display: inline;
+    }
+.jresumo{
+    padding: 6vh 0;
+}
+    .jresdiv{
+    width: 80vw;
+    margin: 3vh auto;
+    padding-top: 2vh;
+}
+    .jfoto{
+    display: block;
+    margin-top: -2vh;
+    margin-bottom: 3vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+.jcertificados{
+    padding: 6vh 0;
+    background-color: gray;
+}
+
+
+/* XS*/
+    @media(min-width:576px){
+}
+/* SM*/
+    @media(min-width:768px){
+}
+/* MD*/
+    @media(min-width:992px){
+        .jheader{
+            padding: 32vh 10vw;
+        }
+}    
+/* lg*/
+    @media(min-width:1200px){
+}
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
