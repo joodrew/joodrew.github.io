@@ -30,14 +30,21 @@
     width: 100vw;
     box-shadow: 0 5px 5px rgba(0,0,0,0.25);/*sombra baixo*/
 }
+.jbg{
+    background-image:url(jheader.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
 .jheader{
+    z-index: 1;
     color: white;
     height: 91.6vh;
     width: 100vw;
     padding: 20vh;
-    background:url(jheader.jpg);
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(90deg, rgba(238, 119, 83, 0.21), rgba(231, 60, 125, 0.21), rgba(35, 166, 213, .21), rgba(35, 213, 171, .21));
+    background-size: 400% 100%;
+    animation: Gradient 15s ease infinite;
 }
 .jheader hr{
     background-color: white;
