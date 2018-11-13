@@ -60,7 +60,9 @@
 
 /* XS*/
     @media(min-width:576px){
+        .jheader{
         padding: 15vh 10vw;
+        }
     }
 /* SM*/
     @media(min-width:768px){
