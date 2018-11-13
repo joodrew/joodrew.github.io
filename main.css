@@ -65,12 +65,13 @@
     }
 /* SM*/
     @media(min-width:768px){
-}
-/* MD*/
-    @media(min-width:992px){
         .jheader{
             padding: 32vh 10vw;
         }
+    }
+/* MD*/
+    @media(min-width:992px){
+       
 }    
 /* lg*/
     @media(min-width:1200px){
