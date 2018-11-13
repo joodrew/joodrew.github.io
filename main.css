@@ -17,6 +17,9 @@
     animation: Gradient 15s ease infinite;
     border: none;
 }
+.lead{
+    width: 90vw;
+}
 .cima{
     position: relative;
     width: 100vw;
