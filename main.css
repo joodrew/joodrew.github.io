@@ -30,7 +30,6 @@
 .jheader{
     height: 91.6vh;
     width: 100vw;
-    padding: 1vh 10vw;
     background: gray;
 }
     .jheader h1,p{
@@ -61,7 +60,8 @@
 
 /* XS*/
     @media(min-width:576px){
-}
+        padding: 15vh 10vw;
+    }
 /* SM*/
     @media(min-width:768px){
 }
