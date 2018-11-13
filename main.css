@@ -39,6 +39,7 @@
     width: 100vw;
 }
 .jheader{
+    width: 100vw;
     height: 100%;
     padding: 20vh 5vw;
     background: linear-gradient(90deg, rgba(238, 119, 83, 0.21), rgba(231, 60, 125, 0.21), rgba(35, 166, 213, .21), rgba(35, 213, 171, .21));
