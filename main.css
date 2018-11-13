@@ -35,7 +35,7 @@
     height: 91.6vh;
     width: 100vw;
     padding: 20vh 10vw;
-    background: gray;
+    background:url(jheader.jpg) cover;
 }
     .jheader h1,p{
     padding: 1% auto;
