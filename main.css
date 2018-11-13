@@ -19,7 +19,7 @@
 }
 .lead{
     display: inline-block;
-    padding: auto 3vw;
+    width: 90vw;
 }
 .cima{
     position: relative;
