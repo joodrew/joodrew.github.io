@@ -18,6 +18,7 @@
     border: none;
 }
 .lead{
+    display: inline-block;
     padding: auto 3vw;
 }
 .cima{
