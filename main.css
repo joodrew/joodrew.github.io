@@ -34,14 +34,13 @@
     background-image:url(jheader.jpg);
     background-size: cover;
     background-position: center;
-    
-}
-.jheader{
-    z-index: 1;
     color: white;
     height: 91.6vh;
     width: 100vw;
-    padding: 20vh;
+}
+.jheader{
+    height: 100%;
+    padding: 20vh 5vw;
     background: linear-gradient(90deg, rgba(238, 119, 83, 0.21), rgba(231, 60, 125, 0.21), rgba(35, 166, 213, .21), rgba(35, 213, 171, .21));
     background-size: 400% 100%;
     animation: Gradient 15s ease infinite;
