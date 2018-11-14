@@ -30,7 +30,7 @@ p {
 }
 
 .btn-light {
-    animation: cor 14s infinite;
+    animation: cor 14s ease infinite;
 }
 
 .gradiente {
