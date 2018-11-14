@@ -73,7 +73,10 @@
     padding: 6vh 0;
     background-color: gray;
 }
-
+.jcert img{
+    margin-top: 5vh;
+    height: 150px; 
+}
 
 /* XS*/
     @media(min-width:576px){
