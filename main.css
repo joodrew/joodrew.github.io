@@ -5,6 +5,10 @@ h1,.navbar-brand{
 body{
     font-family: 'bungee', cursive;
 }
+.navbar-brand{
+    font-size:1rem;
+    word-spacing: 5px;
+}
 p{
     font-family: 'BioRhyme', serif !important;
 }
