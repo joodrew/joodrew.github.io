@@ -1,64 +1,83 @@
 @import url('https://fonts.googleapis.com/css?family=BioRhyme|Bungee|Monoton');
+h1, .navbar-brand {
+    font-family: 'Monoton', cursive !important;
+}
 
-h1,.navbar-brand{
-    font-family: 'Monoton', cursive !important;}
-body{
+body {
     font-family: 'bungee', cursive;
 }
-.bio{
+
+.bio {
     font-family: 'bungee', cursive;
 }
-.navbar-brand{
-    font-size:1rem;
-    word-spacing: 5px;
-}  
-p{
+
+p {
     font-family: 'BioRhyme', serif !important;
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     display: none;
 }
-.navbar-toggler{
-    border-color: rgba(0,0,0,1);
+
+.navbar-toggler {
+    border-color: rgba(0, 0, 0, 1);
     border: none;
- }
- .gradiente{
+}
+
+.navbar-brand {
+    font-size: 1rem;
+    word-spacing: 5px;
+}
+
+.btn-light {
+    animation: cor 14s infinite;
+}
+
+.gradiente {
     background: linear-gradient(90deg, #EE7752, #E73C7E, #23A6D5, #23D5AB) !important;
-	background-size: 400% 100% !important;
+    background-size: 400% 100% !important;
     animation: Gradient 15s ease infinite !important;
     border: none !important;
- }
- 
-.btn:focus,.btn:active {
+}
+
+.btn:focus, .btn:active {
     outline: none !important;
     box-shadow: none;
- }
- .btn-primary{
+}
+
+.btn-primary {
     border: none;
 }
-.lead{
+
+.lead {
     display: inline-block;
-    width: 90% ;
+    width: 90%;
 }
-.cima{
+
+.cima {
     position: relative;
     width: 100vw;
-    box-shadow: 0 -5px 5px rgba(0,0,0,0.25); /*Sombra Cima*/
+    box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.25);
+    /*Sombra Cima*/
 }
-.baixo{
+
+.baixo {
     position: relative;
     width: 100vw;
-    box-shadow: 0 5px 5px rgba(0,0,0,0.25);/*sombra baixo*/
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+    /*sombra baixo*/
 }
-.jbg{
-    background-image:url(../img/jheader.jpg);
+
+.jbg {
+    background-image: url(../img/jheader.jpg);
     background-size: cover;
     background-position: center;
-    color: white;   
+    color: white;
     height: 91.6vh;
     width: 100vw;
 }
-.jheader{
+
+.jheader {
     width: 100vw;
     height: 100%;
     padding: 20vh 5vw;
@@ -66,22 +85,27 @@ p{
     background-size: 400% 100%;
     animation: Gradient 15s ease infinite;
 }
-.jheader hr{
+
+.jheader hr {
     background-color: white;
     color: white;
 }
-    .jheader h1,p{
+
+.jheader h1, p {
     display: inline;
-    }
-.jresumo{
+}
+
+.jresumo {
     padding: 4vh 0 3vh 0;
 }
-    .jresdiv{
+
+.jresdiv {
     width: 80vw;
     margin: 3vh auto;
     padding: 2vh 0;
 }
-    .jfoto{
+
+.jfoto {
     display: block;
     margin-top: -5vh;
     margin-bottom: 3vh;
@@ -90,52 +114,83 @@ p{
     border-radius: 10px;
 }
 
-.jcertificados{
+.jcertificados {
     color: white;
-    padding: 6vh 0;
+    padding: 10vh 0;
     background-color: gray;
+    padding: 5vh 0;
 }
-.jcert img{
+
+.jcert img {
     margin-top: 2vh;
-    height: 100px; 
+    height: 100px;
     width: 100px;
     border-radius: 3%;
     margin-bottom: 2vh;
 }
-.sombra{
+
+.sombra {
     position: relative;
-    height: 100px; 
+    height: 100px;
     width: 100px;
     margin: -113.5px 0 18px 0;
     border-radius: 3px;
-    box-shadow:5px  5px rgba(0,0,0,.25);
+    box-shadow: 5px 5px rgba(0, 0, 0, .25);
     filter: blur(1px);
 }
-/* XS*/
-    @media(min-width:576px){
 
-    }
+/* XS*/
+
+@media(min-width:576px) {}
+
 /* SM*/
-    @media(min-width:768px){
-        .jheader{
-            padding: 32vh 10vw;
-        }
+
+@media(min-width:768px) {
+    .jheader {
+        padding: 32vh 10vw;
     }
-/* MD*/
-    @media(min-width:992px){
-       
-}    
-/* lg*/
-    @media(min-width:1200px){
 }
+
+/* MD*/
+
+@media(min-width:992px) {}
+
+/* lg*/
+
+@media(min-width:1200px) {}
+
 @keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes cor {
+    0% {
+        color: #EE7752;
+    }
+    16.5% {
+        color: #E73C7E;
+    }
+    33% {
+        color: #23A6D5;
+    }
+    39.5% {
+        color: #23D5AB;
+    }
+    66% {
+        color: #23A6D5;
+    }
+    82.5% {
+        color: #E73C7E;
+    }
+    100% {
+        color: #EE7752;
+    }
 }

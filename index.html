@@ -18,7 +18,7 @@
 
 <body>
   <!--NAV-->
-  <nav class="navbar baixo navbar-expand-lg navbar-dark gradiente bg-dark">
+  <nav class=" navbar baixo navbar-expand-lg navbar-dark gradiente bg-dark">
     <a class="navbar-brand" href="#">JOELSON FELIPE FIRMINO</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
       aria-expanded="false" aria-label="Toggle navigation">
@@ -33,13 +33,13 @@
           <a class="nav-link" href="#res">RESUMO</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">CERTIFICADOS</a>
+          <a class="nav-link" href="#cer">CERTIFICADOS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">PROJETOS</a>
+          <a class="nav-link" href="#pro">PROJETOS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">CONTATOS</a>
+          <a class="nav-link" href="#con">CONTATOS</a>
         </li>
       </ul>
     </div>
@@ -53,9 +53,9 @@
     </div>
   </div>
   <!--RESUMO-->
-  <div class="jresumo cima container-fluid text-center">
+  <div id="res" class="jresumo cima container-fluid text-center">
     <h1>RESUMO</h1>
-    <p class="lead">TENHO EM MIM TODOS OS SONHOS DO MUNDO.</p>
+    <p class="lead">"TENHO EM MIM TODOS OS SONHOS DO MUNDO"</p>
     <div class="jresdiv conteiner text-left">
       <div class="row">
         <!--Conteudo Mobile-->
@@ -63,7 +63,7 @@
           <div class="col-12">
             <img src="./img/minhafoto.jpg" class="jfoto img-fluid" alt="Uma foto minha bem bonita.">
           </div>
-          <div class="col-12 text-justify">
+          <div class=" restxt col-12 text-justify">
             <p> texto bla blatexto bla blatexto bla blatexto bla blatexto bla blatexto bla blatexto bla
               blatexto bla blatexto bla blatexto bla blatexto bla blatexto bla blatexto bla blatexto bla blatexto bla
               blabla blatexto bla brgatexto bla blatexto bla
@@ -76,8 +76,8 @@
       <!--Conteudo Desktop-->
       <div class="d-none d-md-block">
         <div class="row">
-          <div class="col-1"></div>
-          <div class="col-6  text-justify">
+          <div class="col-2"></div>
+          <div class=" col-6    text-justify">
             <p> texto bla blatexto bla blatexto bla blatexto bla blatexto bla blatexto bla blatexto bla
               blatexto bla blatexto bla blatexto bla blatexto bla blatexto bla blatexto bla blatexto bla blatexto bla
               blabla blatexto bla blatexto bla blatexto bla
@@ -85,12 +85,12 @@
               bla
             </p>
           </div>
-          <div class="col-4">
+          <div class="col-2">
             <figure class="figure">
               <img src="./img/minhafoto.jpg" class="figure-img img-fluid rounded" alt="Uma foto minha bem bonita.">
             </figure>
           </div>
-          <div class="col-1"></div>
+          <div class="col-2"></div>
         </div>
       </div>
     </div>
@@ -98,9 +98,11 @@
   </div>
   <div class="baixo container-fluid"><br></div>
   <!--CERTIFICADOS-->
-  <div class="jcertificados gradiente container-fluid text-center">
+  
+  <div id="cer" class="jcertificados gradiente container-fluid text-center">
+      <br>
     <h1> CERTIFICADOS</h1>
-    <p class="lead">“APRENDER É A ÚNICA COISA DE QUE A MENTE NUNCA SE CANSA, NUNCA TEM MEDO E NUNCA SE ARREPENDE “
+    <p class="lead">“APRENDER É A ÚNICA COISA DE QUE A MENTE NUNCA SE CANSA, NUNCA TEM MEDO E NUNCA SE ARREPENDE“
       LEONADOR DA VINCI
     </p>
     </section>
@@ -147,7 +149,22 @@
           <div class="sombra"> </div>
         </a>
       </div>
-    </section>
+      <div>
+          <!--OFFICE -->
+          <a href="https://www.freecodecamp.org/certification/jff/responsive-web-design" target="_blank">
+            <img alt="Certificado Pacote Office" src="./img/c-office.png">
+            <div class="sombra"> </div>
+          </a>
+        </div>
+        <div>
+            <!--ACCESS -->
+            <a href="https://www.freecodecamp.org/certification/jff/responsive-web-design" target="_blank">
+              <img alt="Certificado Aperfeiçoamento Profissional Access" src="./img/c-access.png">
+              <div class="sombra"> </div>
+            </a>
+          </div>
+    </section><br>
+    <button type="button" class="btn-light btn btn-lg  bio">Ver Todos </button>
   </div>
   <!--PROJETOS-->
   <div class="jprojetos cima container-fluid">
