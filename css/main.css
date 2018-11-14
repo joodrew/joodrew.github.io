@@ -5,6 +5,9 @@ h1,.navbar-brand{
 body{
     font-family: 'bungee', cursive;
 }
+.bio{
+    font-family: 'bungee', cursive;
+}
 .navbar-brand{
     font-size:1rem;
     word-spacing: 5px;
@@ -23,6 +26,12 @@ p{
     background: linear-gradient(90deg, #EE7752, #E73C7E, #23A6D5, #23D5AB) !important;
 	background-size: 400% 100% !important;
     animation: Gradient 15s ease infinite !important;
+    border: none !important;
+ }
+ 
+.btn:focus,.btn:active {
+    outline: none !important;
+    box-shadow: none;
  }
  .btn-primary{
     border: none;
@@ -42,7 +51,7 @@ p{
     box-shadow: 0 5px 5px rgba(0,0,0,0.25);/*sombra baixo*/
 }
 .jbg{
-    background-image:url(jheader.jpg);
+    background-image:url(../img/jheader.jpg);
     background-size: cover;
     background-position: center;
     color: white;   
@@ -88,9 +97,20 @@ p{
 }
 .jcert img{
     margin-top: 2vh;
-    height: 150px; 
+    height: 100px; 
+    width: 100px;
+    border-radius: 3%;
+    margin-bottom: 2vh;
 }
-
+.sombra{
+    position: relative;
+    height: 100px; 
+    width: 100px;
+    margin: -113.5px 0 18px 0;
+    border-radius: 3px;
+    box-shadow:5px  5px rgba(0,0,0,.25);
+    filter: blur(1px);
+}
 /* XS*/
     @media(min-width:576px){
 

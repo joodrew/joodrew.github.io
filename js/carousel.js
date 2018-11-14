@@ -1,6 +1,6 @@
 
 $(document).ready(function () {
-
+// CERTIFICADOS
   $('.jcert').slick({
     autoplay: true,
     autoplaySpeed: 1000,
@@ -44,4 +44,6 @@ $(document).ready(function () {
       }
     ]
   });
+//PROJETOS
+
 });
