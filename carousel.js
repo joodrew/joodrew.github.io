@@ -1,22 +1,32 @@
-$(document).ready(function(){
-  $('.customer-logos').slick({
-    slidesToShow: 6,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 1000,
-    arrows: false,
-    dots: false,
-    pauseOnHover: false,
-    responsive: [{
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 4
-      }
-    }, {
-      breakpoint: 520,
-      settings: {
-        slidesToShow: 3
-      }
-    }]
+
+$(document).ready(function () {
+  $('.certificado-carousel').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      centerMode: true,
+      centerPadding: '60px',
+      slidesToShow: 3,
+      responsive: [
+          {
+              breakpoint: 768,
+              settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '40px',
+                  slidesToShow: 3
+              }
+          },
+          {
+              breakpoint: 480,
+              settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '40px',
+                  slidesToShow: 1
+              }
+          }
+      ]
   });
 });
