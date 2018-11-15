@@ -5,10 +5,11 @@ $(document).ready(function () {
     autoplay: true,
     autoplaySpeed: 1000,
     centerMode: true,
+    adaptiveHeight: true,
     arrows: false,
     responsive: [
       {
-        breakpoint: 1920,
+        breakpoint: 5000,
         settings: {
           slidesToShow: 7
         }

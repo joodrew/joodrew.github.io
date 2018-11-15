@@ -2,7 +2,9 @@
 h1, .navbar-brand {
     font-family: 'Monoton', cursive !important;
 }
-
+h1{
+    font-size: 2vw !important;
+}
 body {
     font-family: 'bungee', cursive;
 }
@@ -18,15 +20,26 @@ p {
 ::-webkit-scrollbar {
     display: none;
 }
-
+.navbar{
+    flex-direction: column;
+    text-align: center;
+}
+.navbar-toggler-icon {
+    background-image: url(../img/nav-arrow.png) !important;
+    height: 2vh !important;
+    vertical-align: top !important; 
+}
 .navbar-toggler {
-    border-color: rgba(0, 0, 0, 1);
+    height: 2vh !important;
+    border-color: rgba(0, 0, 0, 0) !important;
     border: none;
+    padding: 0 !important;
 }
 
 .navbar-brand {
-    font-size: 1rem;
+    font-size: 1rem !important;
     word-spacing: 5px;
+    display: block;
 }
 
 .btn-light {
@@ -94,6 +107,9 @@ p {
 .jheader h1, p {
     display: inline;
 }
+.jheader h1{
+    font-size: 2.5rem !important;
+}
 
 .jresumo {
     padding: 4vh 0 3vh 0;
@@ -112,49 +128,77 @@ p {
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, .25)
 }
-
+#cer{
+    padding: 0px 0px 5vh 0px;
+}
 .jcertificados {
     color: white;
-    padding: 10vh 0;
     background-color: gray;
     padding: 5vh 0;
 }
-
 .jcert img {
-    margin-top: 2vh;
+    margin: 2vh 0;
     height: 100px;
     width: 100px;
     border-radius: 3%;
-    margin-bottom: 2vh;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .25)
 }
-
+.jprojetos{
+    padding: 5vh 0;
+}
+.jcontatos{
+    color: white;
+    background: url(../img/jcontato.jpg);
+    background-size: cover;
+    padding: 5vh 0;
+}
+.btn-cofee{
+    animation: none;
+}
+button:focus { outline: none !important; }
 .sombra {
     position: relative;
     height: 100px;
     width: 100px;
-    margin: -113.5px 0 18px 0;
+    margin: -65% 0 18% -1%;
     border-radius: 3px;
     box-shadow: 5px 5px rgba(0, 0, 0, .25);
     filter: blur(1px);
+    display: none;
 }
-
+.jfooter{
+    background-color: black;
+    color: white;
+    height: 20vh;
+}
+@media(max-width:576px) {
+    h1{
+        font-size: 1.5rem !important ;
+    }
+   }
 /* XS*/
 
-@media(min-width:576px) {}
-
+@media(min-width:576px) {
+ h1{
+     font-size: 1.8rem !important ;
+ }
+}
 /* SM*/
 
 @media(min-width:768px) {
     .jheader {
         padding: 32vh 10vw;
     }
+    h1{
+        font-size: 2rem !important ;
+    }
 }
 
 /* MD*/
 
 @media(min-width:992px) {}
-
 /* lg*/
 
 @media(min-width:1200px) {}
