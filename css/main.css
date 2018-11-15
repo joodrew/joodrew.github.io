@@ -5,7 +5,6 @@ h1, .navbar-brand {
 .monoton{
     font-family: 'Monoton',cursive;
 }
-
 h1 {
     font-size: 2vw !important;
 }
@@ -25,18 +24,20 @@ p {
 ::-webkit-scrollbar {
     display: none;
 }
-
 .navbar {
     flex-direction: column;
     text-align: center;
 }
 
 .navbar-toggler-icon {
-    background-image: url(../img/nav-arrow.png) !important;
+    background-image: url(../img/nav-arrow-down.png) !important;
     height: 2vh !important;
     vertical-align: top !important;
 }
-
+.jnavbar-toggler-icon { 
+    height: 4vh !important;
+    background-image: url(../img/nav-arrow-up.png) !important;
+}
 .navbar-toggler {
     height: 2vh !important;
     border-color: rgba(0, 0, 0, 0) !important;
