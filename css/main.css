@@ -2,9 +2,14 @@
 h1, .navbar-brand {
     font-family: 'Monoton', cursive !important;
 }
-h1{
+.monoton{
+    font-family: 'Monoton',cursive;
+}
+
+h1 {
     font-size: 2vw !important;
 }
+
 body {
     font-family: 'bungee', cursive;
 }
@@ -20,15 +25,18 @@ p {
 ::-webkit-scrollbar {
     display: none;
 }
-.navbar{
+
+.navbar {
     flex-direction: column;
     text-align: center;
 }
+
 .navbar-toggler-icon {
     background-image: url(../img/nav-arrow.png) !important;
     height: 2vh !important;
-    vertical-align: top !important; 
+    vertical-align: top !important;
 }
+
 .navbar-toggler {
     height: 2vh !important;
     border-color: rgba(0, 0, 0, 0) !important;
@@ -107,7 +115,8 @@ p {
 .jheader h1, p {
     display: inline;
 }
-.jheader h1{
+
+.jheader h1 {
     font-size: 2.5rem !important;
 }
 
@@ -121,43 +130,79 @@ p {
     padding: 2vh 0;
 }
 
+.restextd {
+    float: left;
+}
+
+.jfotod {
+    float: right;
+    border-radius: 10px;
+    padding: 0 !important;
+}
+
+.jfotod figure, img {
+    margin: 0 auto !important;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, .25);
+}
+
+.jfotom {
+    margin-bottom: 3vh;
+}
+
 .jfoto {
     display: block;
-    margin-top: -5vh;
-    margin-bottom: 3vh;
-    margin-left: auto;
-    margin-right: auto;
+    margin: -5vh auto 3vh auto!important;
     border-radius: 10px;
-    box-shadow: 0 0 5px 3px rgba(0, 0, 0, .25)
 }
-#cer{
+
+#cer {
     padding: 0px 0px 5vh 0px;
 }
+
 .jcertificados {
     color: white;
     background-color: gray;
     padding: 5vh 0;
 }
+
+.jcert div {
+    padding: 5px;
+}
+
 .jcert img {
-    margin: 2vh 0;
     height: 100px;
     width: 100px;
     border-radius: 3%;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, .25)
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .25);
+    margin: 5vh 0;
 }
-.jprojetos{
+
+.jprojetos {
     padding: 5vh 0;
 }
-.jcontatos{
+
+.jcontatos {
+    height: 40vh;
     color: white;
-    background: url(../img/jcontato.jpg);
-    background-size: cover;
+    background-image:  url(../img/jcontato.jpg);
+    background-size: cover !important; 
     padding: 5vh 0;
 }
-.btn-cofee{
+.jcontatos h3{
+    padding: 2vh 2vw;
+    margin: auto;
+    background: rgba(0, 0, 0, .8);
+    display: inline;
+    border-radius: 5px;
+}
+.btn-cofee {
     animation: none;
 }
-button:focus { outline: none !important; }
+
+button:focus {
+    outline: none !important;
+}
+
 .sombra {
     position: relative;
     height: 100px;
@@ -168,37 +213,42 @@ button:focus { outline: none !important; }
     filter: blur(1px);
     display: none;
 }
-.jfooter{
+
+.jfooter {
     background-color: black;
     color: white;
     height: 20vh;
 }
+
 @media(max-width:576px) {
-    h1{
-        font-size: 1.5rem !important ;
+    h1 {
+        font-size: 1.5rem !important;
     }
-   }
+}
+
 /* XS*/
 
 @media(min-width:576px) {
- h1{
-     font-size: 1.8rem !important ;
- }
+    h1 {
+        font-size: 1.8rem !important;
+    }
 }
+
 /* SM*/
 
 @media(min-width:768px) {
     .jheader {
         padding: 32vh 10vw;
     }
-    h1{
-        font-size: 2rem !important ;
+    h1 {
+        font-size: 2rem !important;
     }
 }
 
 /* MD*/
 
 @media(min-width:992px) {}
+
 /* lg*/
 
 @media(min-width:1200px) {}
