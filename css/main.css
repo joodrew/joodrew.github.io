@@ -63,9 +63,9 @@ p {
 }
 
 *:focus {
-    outline: 0!important;
-  }
-  
+  outline: 0!important;
+}
+
 .btn-primary {
     border: none;
 }
@@ -173,22 +173,18 @@ p {
 }
 
 .jprojetos {
-    padding: 3vh 0 1.5vh 0;
+    padding: 3vh 0 1.5vh 0 !important;
 }
 .jproj div{
     margin: 2vh 0;
+    padding: auto 0;
 }
 .jproj img{
     height: auto;
     width: auto;
-    max-width: 400px;
+    margin: auto 0;
+    max-width: 500px;
 }
-.slick-prev:before {
-    animation: cor 15s ease infinite;
-  }
-  .slick-next:before {
-    animation: cor 15s ease infinite;
-  }
 .jcontatos {
     color: white;
     background-image:  url(../img/jcontato.jpg);
@@ -205,7 +201,26 @@ p {
 button:focus {
     outline: none !important;
 }
-
+form{
+    margin: auto;
+    max-width: 400px;
+}
+.jfooter{
+    background: black;
+}
+input, textarea{
+    border-radius: 0 !important;
+    padding: 2vh 2vw !important;
+    background-color: rgba(0, 0, 0, 0.75) !important;
+    border: none !important;
+    color: white !important;
+}
+.form-group{
+    margin-bottom: 0 !important;
+}
+::placeholder{
+    color: rgb(175, 175, 175) !important;
+}
 .sombra {
     position: relative;
     height: 100px;
