@@ -181,7 +181,7 @@ p {
 .jproj img{
     height: auto;
     width: auto;
-    max-width: 500px;
+    max-width: 400px;
 }
 .slick-prev:before {
     animation: cor 15s ease infinite;
