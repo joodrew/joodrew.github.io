@@ -62,11 +62,10 @@ p {
     border: none !important;
 }
 
-.btn:focus, .btn:active {
-    outline: none !important;
-    box-shadow: none;
-}
-
+*:focus {
+    outline: 0!important;
+  }
+  
 .btn-primary {
     border: none;
 }
@@ -130,11 +129,6 @@ p {
     margin: 3vh auto;
     padding: 2vh 0;
 }
-
-.restextd {
-    float: left;
-}
-
 .jfotod {
     float: right;
     border-radius: 10px;
@@ -179,11 +173,23 @@ p {
 }
 
 .jprojetos {
-    padding: 5vh 0;
+    padding: 3vh 0 1.5vh 0;
 }
-
+.jproj div{
+    margin: 2vh 0;
+}
+.jproj img{
+    height: auto;
+    width: auto;
+    max-width: 500px;
+}
+.slick-prev:before {
+    animation: cor 15s ease infinite;
+  }
+  .slick-next:before {
+    animation: cor 15s ease infinite;
+  }
 .jcontatos {
-    height: 40vh;
     color: white;
     background-image:  url(../img/jcontato.jpg);
     background-size: cover !important; 
@@ -196,10 +202,6 @@ p {
     display: inline;
     border-radius: 5px;
 }
-.btn-cofee {
-    animation: none;
-}
-
 button:focus {
     outline: none !important;
 }
@@ -215,16 +217,15 @@ button:focus {
     display: none;
 }
 
-.jfooter {
-    background-color: black;
-    color: white;
-    height: 20vh;
-}
-
 @media(max-width:576px) {
     h1 {
         font-size: 1.5rem !important;
     }
+    
+.jproj img{
+    height: auto;
+    width: 95%;
+}
 }
 
 /* XS*/
@@ -232,6 +233,11 @@ button:focus {
 @media(min-width:576px) {
     h1 {
         font-size: 1.8rem !important;
+    }
+
+    .jproj img{
+        height: auto;
+        width: 85%;
     }
 }
 
@@ -244,11 +250,22 @@ button:focus {
     h1 {
         font-size: 2rem !important;
     }
+    
+.jproj img{
+    height: auto;
+    width: 75%;
+}
 }
 
 /* MD*/
 
-@media(min-width:992px) {}
+@media(min-width:992px) {
+    
+.jproj img{
+    height: auto;
+    width: 65%;
+}
+}
 
 /* lg*/
 

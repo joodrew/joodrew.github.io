@@ -1,6 +1,6 @@
 
 $(document).ready(function () {
-// CERTIFICADOS
+  // CERTIFICADOS
   $('.jcert').slick({
     autoplay: true,
     autoplaySpeed: 1000,
@@ -19,7 +19,7 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 6
         }
-      },{
+      }, {
         breakpoint: 820,
         settings: {
           slidesToShow: 5
@@ -45,6 +45,13 @@ $(document).ready(function () {
       }
     ]
   });
-//PROJETOS
-
+  // PROJETOS
+  $('.jproj').slick({
+    infinite: true,
+    speed: 300,
+    dots: false,
+    arrows:false,
+    autoplay: true,
+    slidesToShow: 1
+  });
 });
