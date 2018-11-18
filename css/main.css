@@ -187,9 +187,9 @@ p {
 }
 .jcontatos {
     color: white;
-    background-image:  url(../img/jcontato.jpg);
+    background: url(../img/jcontato.jpg);
     background-size: cover !important; 
-    padding: 5vh 0;
+    padding: 1vh 0 5vh;
 }
 .jcontatos h3{
     padding: 2vh 2vw;
@@ -200,10 +200,6 @@ p {
 }
 button:focus {
     outline: none !important;
-}
-form{
-    margin: auto;
-    max-width: 400px;
 }
 .jfooter{
     background: black;
