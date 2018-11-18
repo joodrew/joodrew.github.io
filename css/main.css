@@ -202,10 +202,6 @@ p {
 button:focus {
     outline: none !important;
 }
-.jfooter{
-    background: black;
-    position: relative;
-}
 input, textarea{
     border-radius: 0 !important;
     padding: 2vh 2vw !important;
@@ -228,6 +224,14 @@ input, textarea{
     box-shadow: 5px 5px rgba(0, 0, 0, .25);
     filter: blur(1px);
     display: none;
+}
+
+.jfooter{
+    background: black;
+    padding: 3vh 0;
+}
+.jnome{
+    animation: cor 15s ease infinite;
 }
 
 @media(max-width:576px) {
