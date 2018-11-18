@@ -11,6 +11,7 @@ h1 {
 
 body {
     font-family: 'bungee', cursive;
+    background-color: black;
 }
 
 .bio {
@@ -203,6 +204,7 @@ button:focus {
 }
 .jfooter{
     background: black;
+    position: relative;
 }
 input, textarea{
     border-radius: 0 !important;
