@@ -25,7 +25,10 @@ p {
     display: none;
 }
 .navbar {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
 }
 
@@ -52,13 +55,18 @@ p {
 }
 
 .btn-light {
-    animation: cor 15s ease infinite;
+    -webkit-animation: cor 15s ease infinite;
+            animation: cor 15s ease infinite;
 }
 
 .gradiente {
+    background: -webkit-gradient(linear, left top, right top, from(#EE7752), color-stop(#E73C7E), color-stop(#23A6D5), to(#23D5AB)) !important;
+    background: -webkit-linear-gradient(left, #EE7752, #E73C7E, #23A6D5, #23D5AB) !important;
+    background: -o-linear-gradient(left, #EE7752, #E73C7E, #23A6D5, #23D5AB) !important;
     background: linear-gradient(90deg, #EE7752, #E73C7E, #23A6D5, #23D5AB) !important;
     background-size: 400% 100% !important;
-    animation: Gradient 15s ease infinite !important;
+    -webkit-animation: Gradient 15s ease infinite !important;
+            animation: Gradient 15s ease infinite !important;
     border: none !important;
 }
 
@@ -78,14 +86,16 @@ p {
 .cima {
     position: relative;
     width: 100vw;
-    box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.25);
     /*Sombra Cima*/
 }
 
 .baixo {
     position: relative;
     width: 100vw;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
     /*sombra baixo*/
 }
 
@@ -102,9 +112,13 @@ p {
     width: 100vw;
     height: 100%;
     padding: 20vh 5vw;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(238, 119, 83, 0.21)), color-stop(rgba(231, 60, 125, 0.21)), color-stop(rgba(35, 166, 213, .21)), to(rgba(35, 213, 171, .21)));
+    background: -webkit-linear-gradient(left, rgba(238, 119, 83, 0.21), rgba(231, 60, 125, 0.21), rgba(35, 166, 213, .21), rgba(35, 213, 171, .21));
+    background: -o-linear-gradient(left, rgba(238, 119, 83, 0.21), rgba(231, 60, 125, 0.21), rgba(35, 166, 213, .21), rgba(35, 213, 171, .21));
     background: linear-gradient(90deg, rgba(238, 119, 83, 0.21), rgba(231, 60, 125, 0.21), rgba(35, 166, 213, .21), rgba(35, 213, 171, .21));
     background-size: 400% 100%;
-    animation: Gradient 15s ease infinite;
+    -webkit-animation: Gradient 15s ease infinite;
+            animation: Gradient 15s ease infinite;
 }
 
 .jheader hr {
@@ -137,7 +151,8 @@ p {
 
 .jfotod figure, img {
     margin: 0 auto !important;
-    box-shadow: 0 0 5px 3px rgba(0, 0, 0, .25);
+    -webkit-box-shadow: 0 0 5px 3px rgba(0, 0, 0, .25);
+            box-shadow: 0 0 5px 3px rgba(0, 0, 0, .25);
 }
 
 .jfotom {
@@ -168,7 +183,8 @@ p {
     height: 100px;
     width: 100px;
     border-radius: 3%;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, .25);
+    -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, .25);
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, .25);
     margin: 5vh 0;
 }
 
@@ -211,6 +227,15 @@ input, textarea{
 .form-group{
     margin-bottom: 0 !important;
 }
+::-webkit-input-placeholder{
+    color: rgb(175, 175, 175) !important;
+}
+:-ms-input-placeholder{
+    color: rgb(175, 175, 175) !important;
+}
+::-ms-input-placeholder{
+    color: rgb(175, 175, 175) !important;
+}
 ::placeholder{
     color: rgb(175, 175, 175) !important;
 }
@@ -220,8 +245,10 @@ input, textarea{
     width: 100px;
     margin: -65% 0 18% -1%;
     border-radius: 3px;
-    box-shadow: 5px 5px rgba(0, 0, 0, .25);
-    filter: blur(1px);
+    -webkit-box-shadow: 5px 5px rgba(0, 0, 0, .25);
+            box-shadow: 5px 5px rgba(0, 0, 0, .25);
+    -webkit-filter: blur(1px);
+            filter: blur(1px);
     display: none;
 }
 
@@ -232,7 +259,8 @@ input, textarea{
     padding: 3vh 0;
 }
 .jnome{
-    animation: cor 15s ease infinite;
+    -webkit-animation: cor 15s ease infinite;
+            animation: cor 15s ease infinite;
 }
 
 @media(max-width:576px) {
@@ -288,6 +316,18 @@ input, textarea{
 
 @media(min-width:1200px) {}
 
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
 @keyframes Gradient {
     0% {
         background-position: 0% 50%
@@ -297,6 +337,30 @@ input, textarea{
     }
     100% {
         background-position: 0% 50%
+    }
+}
+
+@-webkit-keyframes cor {
+    0% {
+        color: #EE7752;
+    }
+    16.5% {
+        color: #E73C7E;
+    }
+    33% {
+        color: #23A6D5;
+    }
+    39.5% {
+        color: #23D5AB;
+    }
+    66% {
+        color: #23A6D5;
+    }
+    82.5% {
+        color: #E73C7E;
+    }
+    100% {
+        color: #EE7752;
     }
 }
 
