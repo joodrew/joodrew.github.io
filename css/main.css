@@ -225,10 +225,12 @@ input, textarea{
     display: none;
 }
 
+.jft, .jftt{
+    padding-top: 3vh;
+    }
 .jfooter{
-    background: black;
+    background: rgb(15, 15, 15);
     padding: 3vh 0;
-    margin-bottom: -1.5vh;
 }
 .jnome{
     animation: cor 15s ease infinite;
@@ -243,9 +245,6 @@ input, textarea{
     height: auto;
     width: 95%;
 }
-}
-.jft, .jftt{
-padding-top: 3vh;
 }
 /* XS*/
 
