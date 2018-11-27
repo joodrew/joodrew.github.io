@@ -65,8 +65,8 @@ p {
     background: -o-linear-gradient(left, #EE7752, #E73C7E, #23A6D5, #23D5AB) !important;
     background: linear-gradient(90deg, #EE7752, #E73C7E, #23A6D5, #23D5AB) !important;
     background-size: 400% 100% !important;
-    -webkit-animation: Gradient 15s ease infinite !important;
-            animation: Gradient 15s ease infinite !important;
+    -webkit-animation: Gradient 60s ease infinite !important;
+            animation: Gradient 60s ease infinite !important;
     border: none !important;
 }
 
@@ -117,8 +117,8 @@ p {
     background: -o-linear-gradient(left, rgba(238, 119, 83, 0.21), rgba(231, 60, 125, 0.21), rgba(35, 166, 213, .21), rgba(35, 213, 171, .21));
     background: linear-gradient(90deg, rgba(238, 119, 83, 0.21), rgba(231, 60, 125, 0.21), rgba(35, 166, 213, .21), rgba(35, 213, 171, .21));
     background-size: 400% 100%;
-    -webkit-animation: Gradient 15s ease infinite;
-            animation: Gradient 15s ease infinite;
+    -webkit-animation: Gradient 60s ease infinite;
+            animation: Gradient 60s ease infinite;
 }
 
 .jheader hr {
@@ -259,8 +259,8 @@ input, textarea{
     padding: 3vh 0;
 }
 .jnome{
-    -webkit-animation: cor 15s ease infinite;
-            animation: cor 15s ease infinite;
+    -webkit-animation: cor 60s ease infinite;
+            animation: cor 60s ease infinite;
 }
 
 @media(max-width:576px) {
