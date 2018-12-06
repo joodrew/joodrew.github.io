@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=BioRhyme|Bungee|Monoton');
+/* HTML TAGS */
+::-webkit-scrollbar{
+    display: none;
+}
+body, html {
+    margin: 0px;
+    padding: 0px;
+}
+
+*:focus {
+    outline: 0!important;
+}
+input {
+    border: none !important;
+}
+
+/* FRAMEWORKS */
+
+.navbar-nav.navbar-center {
+    position: relative;
+    left: 50%;
+    transform: translatex(-50%);
+    margin-top: 1vh;
+    font-family: 'bungee', cursive;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,127,39,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+.navbar {
+    padding: 0px 1rem !important;
+}
+
+/* ID CLASS*/
+
+.box {
+    padding: 0 !important;
+}
+
+.titulo {
+    font-family: 'bungee', cursive;
+    background: rgb(255, 127, 39);
+    width: 100%;
+}
+
+.titulo h1 {
+    margin: 0;
+}
+.titulo2{
+    font-family: 'bungee', cursive;
+}
+.navbtn {
+    margin: 0 auto !important;
+    border: none !important;
+}
+
+.navjs a {
+    color: rgb(255, 127, 39) !important;
+}
+.nopadding {
+    padding: 0 !important;
+ }
+.btncal{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
