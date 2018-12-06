@@ -60,10 +60,10 @@ p {
 }
 
 .gradiente {
-    background: -webkit-gradient(linear, left top, right top, from(#EE7752), color-stop(#E73C7E), color-stop(#23A6D5), to(#23D5AB)) !important;
-    background: -webkit-linear-gradient(left, #EE7752, #E73C7E, #23A6D5, #23D5AB) !important;
-    background: -o-linear-gradient(left, #EE7752, #E73C7E, #23A6D5, #23D5AB) !important;
-    background: linear-gradient(90deg, #EE7752, #E73C7E, #23A6D5, #23D5AB) !important;
+    background: -webkit-gradient(linear, left top, right top, from(rgb(113, 238, 82)), color-stop(rgb(60, 231, 160)), color-stop(#23A6D5), to(#23D5AB)) !important;
+    background: -webkit-linear-gradient(left, rgb(113, 238, 82), rgb(60, 231, 160), #23A6D5, #23D5AB) !important;
+    background: -o-linear-gradient(left, rgb(113, 238, 82), rgb(60, 231, 160), #23A6D5, #23D5AB) !important;
+    background: linear-gradient(90deg, rgb(113, 238, 82), rgb(60, 231, 160), #23A6D5, #23D5AB) !important;
     background-size: 400% 100% !important;
     -webkit-animation: Gradient 60s ease infinite !important;
             animation: Gradient 60s ease infinite !important;
@@ -112,10 +112,10 @@ p {
     width: 100vw;
     height: 100%;
     padding: 20vh 5vw;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(238, 119, 83, 0.21)), color-stop(rgba(231, 60, 125, 0.21)), color-stop(rgba(35, 166, 213, .21)), to(rgba(35, 213, 171, .21)));
-    background: -webkit-linear-gradient(left, rgba(238, 119, 83, 0.21), rgba(231, 60, 125, 0.21), rgba(35, 166, 213, .21), rgba(35, 213, 171, .21));
-    background: -o-linear-gradient(left, rgba(238, 119, 83, 0.21), rgba(231, 60, 125, 0.21), rgba(35, 166, 213, .21), rgba(35, 213, 171, .21));
-    background: linear-gradient(90deg, rgba(238, 119, 83, 0.21), rgba(231, 60, 125, 0.21), rgba(35, 166, 213, .21), rgba(35, 213, 171, .21));
+    background: -webkit-gradient(linear, left top, right top, from(rgba(113, 238, 82,.21)), color-stop(rgba(60, 231, 160,.21)), color-stop(rgba(35, 166, 213, .21)), to(rgba(35, 213, 171, .21)));
+    background: -webkit-linear-gradient(left, rgba(113, 238, 82,.21), rgba(60, 231, 160,.21), rgba(35, 166, 213, .21), rgba(35, 213, 171, .21));
+    background: -o-linear-gradient(left, rgba(113, 238, 82,.21), rgba(60, 231, 160,.21), rgba(35, 166, 213, .21), rgba(35, 213, 171, .21));
+    background: linear-gradient(90deg, rgba(113, 238, 82,.21), rgba(60, 231, 160,.21), rgba(35, 166, 213, .21), rgba(35, 213, 171, .21));
     background-size: 400% 100%;
     -webkit-animation: Gradient 60s ease infinite;
             animation: Gradient 60s ease infinite;
@@ -140,29 +140,51 @@ p {
 
 .jresdiv {
     width: 80vw;
-    margin: 3vh auto;
-    padding: 2vh 0;
+    margin: 2vh auto;
+    padding: 0 0 2vh 0;
 }
 .jfotod {
-    float: right;
     border-radius: 10px;
-    padding: 0 !important;
+    margin-bottom: 3vh;
 }
 
 .jfotod figure, img {
     margin: 0 auto !important;
+    display: block;
+}
+.jfotod img{
     -webkit-box-shadow: 0 0 5px 3px rgba(0, 0, 0, .25);
             box-shadow: 0 0 5px 3px rgba(0, 0, 0, .25);
 }
-
-.jfotom {
-    margin-bottom: 3vh;
+ul.timeline {
+    list-style-type: none;
+    position: relative;
 }
-
-.jfoto {
-    display: block;
-    margin: -5vh auto 3vh auto!important;
-    border-radius: 10px;
+ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #22c0e8;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
 }
 
 #cer {
@@ -187,19 +209,23 @@ p {
             box-shadow: 5px 5px 5px rgba(0, 0, 0, .25);
     margin: 5vh 0;
 }
-
 .jprojetos {
     padding: 3vh 0 1.5vh 0 !important;
 }
+
+.jproj{
+    margin: 0;
+    padding: 0;
+}
 .jproj div{
-    margin: 2vh 0;
-    padding: auto 0;
+    margin: 1vh 0;
+}
+.jproj a{
+    margin: 0 auto;
+    max-width: 100px;
 }
 .jproj img{
-    height: auto;
-    width: auto;
-    margin: auto 0;
-    max-width: 500px;
+    max-width: 90%;
 }
 .jcontatos {
     color: white;
@@ -217,28 +243,6 @@ p {
 button:focus {
     outline: none !important;
 }
-input, textarea{
-    border-radius: 0 !important;
-    padding: 2vh 2vw !important;
-    background-color: rgba(0, 0, 0, 0.75) !important;
-    border: none !important;
-    color: white !important;
-}
-.form-group{
-    margin-bottom: 0 !important;
-}
-::-webkit-input-placeholder{
-    color: rgb(175, 175, 175) !important;
-}
-:-ms-input-placeholder{
-    color: rgb(175, 175, 175) !important;
-}
-::-ms-input-placeholder{
-    color: rgb(175, 175, 175) !important;
-}
-::placeholder{
-    color: rgb(175, 175, 175) !important;
-}
 .sombra {
     position: relative;
     height: 100px;
@@ -251,27 +255,31 @@ input, textarea{
             filter: blur(1px);
     display: none;
 }
-
+#con a{
+    color: white;
+}
 .jft, .jftt{
     padding-top: 3vh;
     }
 .jfooter{
     padding: 3vh 0;
 }
-.jnome{
+.jnome,.jnome a{
     -webkit-animation: cor 60s ease infinite;
             animation: cor 60s ease infinite;
 }
 
+.style-none,.style-none:hover {
+    text-decoration: none;
+    color: white;
+}
 @media(max-width:576px) {
     h1 {
         font-size: 1.5rem !important;
     }
-    
-.jproj img{
-    height: auto;
-    width: 95%;
-}
+    .jcontatos{        
+    text-align: center;
+    }
 }
 /* XS*/
 
@@ -279,11 +287,8 @@ input, textarea{
     h1 {
         font-size: 1.8rem !important;
     }
-
-    .jproj img{
-        height: auto;
-        width: 85%;
-    }
+    .jcontatos{
+        text-align: center;}
 }
 
 /* SM*/
@@ -295,21 +300,14 @@ input, textarea{
     h1 {
         font-size: 2rem !important;
     }
-    
-.jproj img{
-    height: auto;
-    width: 75%;
-}
+    .jcontatos{
+        text-align: left;
+    }
 }
 
 /* MD*/
 
 @media(min-width:992px) {
-    
-.jproj img{
-    height: auto;
-    width: 65%;
-}
 }
 
 /* lg*/
@@ -342,10 +340,10 @@ input, textarea{
 
 @-webkit-keyframes cor {
     0% {
-        color: #EE7752;
+        color: rgba(113, 238, 82);
     }
     16.5% {
-        color: #E73C7E;
+        color: rgb(60, 231, 160);
     }
     33% {
         color: #23A6D5;
@@ -357,19 +355,19 @@ input, textarea{
         color: #23A6D5;
     }
     82.5% {
-        color: #E73C7E;
+        color: rgb(60, 231, 160);
     }
     100% {
-        color: #EE7752;
+        color: rgb(113, 238, 82);
     }
 }
 
 @keyframes cor {
     0% {
-        color: #EE7752;
+        color: rgb(113, 238, 82);
     }
     16.5% {
-        color: #E73C7E;
+        color: rgb(60, 231, 160);
     }
     33% {
         color: #23A6D5;
@@ -381,9 +379,9 @@ input, textarea{
         color: #23A6D5;
     }
     82.5% {
-        color: #E73C7E;
+        color: rgb(60, 231, 160);
     }
     100% {
-        color: #EE7752;
+        color: rgb(113, 238, 82);
     }
 }

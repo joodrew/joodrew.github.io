@@ -88,36 +88,48 @@
     <h1>RESUMO</h1>
     <p class="lead">"TENHO EM MIM TODOS OS SONHOS DO MUNDO"</p>
     <div class="jresdiv conteiner text-left">
-      <div class="row">
-        <!--Conteudo Mobile-->
-        <div class="d-block d-md-none ">
-          <div class="col-12 jfotom">
-            <img src="./img/minhafoto.jpg" class="jfoto img-fluid" alt="Uma foto minha bem bonita.">
-          </div>
-          <div class=" restxt col-12 text-justify">
-            <p> Profissional competente e de confiança, comprometido com o trabalho de qualidade; Pessoa versátil e multi disciplinar; Versátil na resolução de problemas maximizando recursos; Entusiasmado, confiável e auto motivado; Hábil em lidar com o público, com diplomacia e profissionalismo; Capacidade de adaptação a novos equipamentos e tecnologias.
-            </p>
-          </div>
-        </div>
-      </div>
-      <!--Conteudo Desktop-->
-      <div class="d-none d-md-block">
         <div class="row ">
-          <div class="col-1"></div>
-          <div class=" col-5   text-justify">
-            <p> Profissional competente e de confiança, comprometido com o trabalho de qualidade; Pessoa versátil e multi disciplinar; Versátil na resolução de problemas maximizando recursos; Entusiasmado, confiável e auto motivado; Hábil em lidar com o público, com diplomacia e profissionalismo; Capacidade de adaptação a novos equipamentos e tecnologias.
+          <div class="col-md-1"></div>
+            <div class=" jfotod col-xs-12  col-md-5 ">
+                <figure class="figure">
+                  <img src="./img/minhafoto.jpg" class="figure-img img-fluid rounded" alt="Uma foto minha bem bonita.">
+                </figure>
+              </div>
+          <div class="col-xs-12 col-md-6">
+            <p> Profissional competente e de confiança, comprometido com o trabalho de qualidade.<br>Pessoa versátil e
+              multi disciplinar.<br>Versátil na resolução de problemas maximizando recursos.<br>Entusiasmado, confiável e
+              auto motivado.<br>Hábil em lidar com o público, com diplomacia e profissionalismo.<br>Capacidade de adaptação a
+              novos equipamentos e tecnologias.
             </p>
-          </div>
-          <div class="col-1"></div>
-          <div class=" col-5 jfotod ">
-            <figure class="figure">
-              <img src="./img/minhafoto.jpg" class="figure-img img-fluid rounded" alt="Uma foto minha bem bonita.">
-            </figure>
           </div>
         </div>
       </div>
+    <button type="button" class="gradiente btn btn-lg btn-primary bio" data-toggle="collapse" data-target="#timeline">Minha
+      Historia </button>
+      <!--LinhaDoTempo-->
+    <div id="timeline" class="collapse">
+            <div class="row">
+              <div class="col-12">
+                <ul class="timeline text-left ">
+                  <li>
+                    <a target="_blank" href="https://www.totoprayogo.com/#">New Web Design</a>
+                    <a href="#" class="float-right">21 March, 2014</a><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
+                  </li>
+                  <li>
+                    <a href="#">21 000 Job Seekers</a>
+                    <a href="#" class="float-right">4 March, 2014</a><br>
+                    <p>Curabitur purus sem, malesuada eu luctus eget, suscipit sed turpis. Nam pellentesque felis vitae justo accumsan, sed semper nisi sollicitudin...</p>
+                  </li>
+                  <li>
+                    <a href="#">Awesome Employers</a>
+                    <a href="#" class="float-right">1 April, 2014</a><br>
+                    <p>Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio, tincidunt vitae nunc vitae, mollis pharetra velit. Sed nec tempor nibh...</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
     </div>
-    <button type="button" class="gradiente btn btn-lg btn-primary bio">Minha Historia </button>
   </div>
   <div class="baixo container-fluid"><br></div>
   <!--CERTIFICADOS-->
@@ -172,97 +184,98 @@
 
         </a>
       </div>
-      <div>
-        <!--OFFICE -->
+      <!--OFFICE -->
+      <!--
+         <div>
         <a href="https://www.freecodecamp.org/certification/jff/responsive-web-design" target="_blank">
           <img alt="Certificado Pacote Office" src="./img/c-office.png">
-
         </a>
-      </div>
-      <div>
-        <!--ACCESS -->
+      </div> 
+        -->
+      <!--ACCESS -->
+      <!--
+          <div>
         <a href="https://www.freecodecamp.org/certification/jff/responsive-web-design" target="_blank">
           <img alt="Certificado Aperfeiçoamento Profissional Access" src="./img/c-access.png">
-
         </a>
       </div>
+    -->
     </section><br>
-    <button type="button" class="btn-light btn btn-lg  bio">Ver Todos </button>
+    <button type="button" class="btn-light btn btn-lg  bio" data-toggle="modal" data-target="#modalcert">Ver Todos </button>
   </div>
+<!-- MODAL CERTIFICADOS -->
+<div class="modal fade" id="modalcert" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title "style="font-family:'monoton',cursive;" id="exampleModalLongTitle">CERTIFICADOS</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+    </div>
+  </div>
+</div>
   <!--PROJETOS-->
   <div id="pro" class="jprojetos carousel cima container-fluid text-center">
+
     <h1> Projetos</h1>
     <section class="jproj">
       <div>
-        <img src="https://via.placeholder.com/500x500?1">
+        <img src="http://placehold.it/320x200" alt="ALT NAME" class="img-responsive" />
+        <h3>Header Name</h3>
+        <p>Description</p>
+        <p ><a href="http://bootsnipp.com/" class="gradiente btn btn-primary btn-block">Open</a>
+        </p>
       </div>
       <div>
-        <img src="https://via.placeholder.com/500x500?1">
+        <img src="http://placehold.it/320x200" alt="ALT NAME" class="img-responsive" />
+        <h3>Header Name</h3>
+        <p>Description</p>
+        <p ><a href="http://bootsnipp.com/" class="gradiente btn btn-primary btn-block">Open</a>
+        </p>
       </div>
       <div>
-        <img src="https://via.placeholder.com/500x500?1">
-      </div>
-      <div>
-        <img src="https://via.placeholder.com/500x500?1">
-      </div>
-      <div>
-        <img src="https://via.placeholder.com/500x500?1">
-      </div>
-      <div>
-        <img src="https://via.placeholder.com/500x500?1">
-      </div>
+        <img src="http://placehold.it/320x200" alt="ALT NAME" class="img-responsive" />
+          <h3>Header Name</h3>
+          <p>Description</p>
+          <p ><a href="http://bootsnipp.com/" class="gradiente btn btn-primary btn-block">Open</a>
+          </p>
+        </div>
+        <div>
+          <img src="http://placehold.it/320x200" alt="ALT NAME" class="img-responsive" />
+            <h3>Header Name</h3>
+            <p>Description</p>
+            <p ><a href="http://bootsnipp.com/" class="gradiente btn btn-primary btn-block">Open</a>
+            </p>
+          </div>
+          <div>
+            <img src="http://placehold.it/320x200" alt="ALT NAME" class="img-responsive" />
+            <h3>Header Name</h3>
+            <p>Description</p>
+            <p ><a href="http://bootsnipp.com/" class="gradiente btn btn-primary btn-block">Open</a>
+            </p>
+          </div>
+          <div>
+            <img src="http://placehold.it/320x200" alt="ALT NAME" class="img-responsive" />
+            <h3>Header Name</h3>
+            <p>Description</p>
+            <p ><a href="http://bootsnipp.com/" class="gradiente btn btn-primary btn-block">Open</a>
+            </p>
+          </div>
     </section>
-    <button type="button" class="gradiente btn btn-lg btn-primary bio">Mais Projetos </button>
+    <button type="button" class="gradiente btn btn-lg btn-primary bio"><a class="style-none" target="_blank" href="https://github.com/joodrew/Projetos">Mais
+        Projetos</a></button>
   </div>
   <div class="baixo container-fluid"><br></div>
   <!--CONTATOS-->
-  <div id="con" class="jcontatos container-fluid text-center">
+  <div id="con" class="jcontatos container-fluid">
     <br>
     <div class="row">
       <h3 class="monoton">QUE TAL UM CAFÉ?</h3>
-    </div>
-    <!--RODAPE-->
-    <form>
-      <div class="row">
-        <div class="col-md-1"></div>
-
-        <div class="col-xs-12 col-md-5">
-          <div class="form-group">
-            <label for="nome"></label>
-            <input id="nome" name="nome" placeholder="Seu Nome" type="text" required="required" class="form-control here">
-          </div>
-          <div class="form-group">
-            <label for="email"></label>
-            <input id="email" name="email" placeholder="Seu@email.com" type="text" required="required" class="form-control here">
-          </div>
-          <div class="form-group">
-            <label for="tel"></label>
-            <input id="tel" name="tel" placeholder="Celular ou Telefone" type="text" required="required" class="form-control here">
-          </div>
-        </div>
-        <div class="col-xs-12 col-md-5">
-          <div class="form-group">
-            <label for="mensagem"></label>
-            <textarea id="mensagem" name="mensagem" cols="40" rows="5" required="required" class="form-control"></textarea>
-          </div>
-          <br>
-          <div class="form-group">
-            <button name="submit" type="submit" class="btn-light btn btn-lg btn-block bio">ENVIAR</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-1"></div>
-    </form>
-
-  </div>
-  <!--RODAPE-->
-
-  <div class="jfooter  container-fluid col-12 cima">
-    <div class="row ">
-      <div class="col-12">
-        <h1 class="jnome text-center" href="#">JOELSON FELIPE FIRMINO</h1>
-      </div>
     </div>
     <div class="row">
       <div class="col-1"></div>
@@ -272,14 +285,14 @@
         </i>
         <br>
         <i class="fas fa-phone">
-          <p> +55 19 988-506-890</p>
+          <a href="tel:+5519988506890"><p> +55 19 988-506-890</p></a>
         </i>
         <br>
         <i class="fas fa-envelope">
-          <p> joelson.firmino@fatec.sp.gov.br</p>
+          <a href="mailto:joelson.firmino@fatec.sp.gov.br?subject=Que%20tal%20um%20Café"> <p> joelson.firmino@fatec.sp.gov.br</p></a>
         </i>
       </div>
-      <div class=" d-flex d-md-none col-1"></div>      
+      <div class=" d-flex d-md-none col-1"></div>
       <div class=" d-flex d-md-none col-1"></div>
       <div class="jftt col-10 col-md-5">
         <p>"Maior que a tristeza de não haver vencido é a vergonha de não ter lutado!"
@@ -290,16 +303,21 @@
     <br>
     <div class="row text-center">
       <div class="col-12 fa-2x jnome">
-        <i class="fab fa-facebook"><a href="#"></a></i>
-        <i class="fab fa-linkedin"><a href="#"></a></i>
-        <i class="fab fa-github"><a href="#"></a></i>
-        <i class="fab fa-whatsapp"><a href="#"></a></i>
+        <a href="https://www.facebook.com/joodrew"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.linkedin.com/in/joelson-felipe-firmino-831b85169/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/joodrew/"><i class="fab fa-github"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=5519988506890&text=Ola%2C%20estava%20esperando%20sua%20mensagem!"><i
+            class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="col-12">
+        <h1 class="jnome text-center" href="#">JOELSON FELIPE FIRMINO</h1>
       </div>
       <div class="row d-block d-md-none">
         <br><br><br>
       </div>
     </div>
-
   </div>
 
   <!--FRAMEWORK-->

@@ -11,7 +11,7 @@ $(document).ready(function () {
       {
         breakpoint: 5000,
         settings: {
-          slidesToShow: 7
+          slidesToShow: 6
         }
       },
       {
@@ -58,34 +58,30 @@ $(document).ready(function () {
     dots: false,
     arrows: false,
     autoplay: true,
-    centerMode: true,
-    centerPadding: '60px',
-    slidesToShow: 2,
+    slidesToShow: 3,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
           arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 1 
+          slidesToShow: 3
         }
         },
       {
         breakpoint: 768,
         settings: {
           arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 1
+            
+            
+          slidesToShow: 2
         }
       },
       {
         breakpoint: 480,
         settings: {
           arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
+            
+            
           slidesToShow: 1
         }
       }
