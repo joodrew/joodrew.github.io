@@ -62,18 +62,35 @@ document.getElementById('cresult').value=cresult;
 function cor(co){
 document.getElementById('header').style.background = co;
 }
-
+function calcular(tipo,valor){
+  if (tipo === 'acao')
+  {
+    if (valor ==='c'){
+      document.getElementById('resultadoc').value = ''
+    }
+    if (valor ==='+' ||valor ==='-' ||valor ==='*' ||valor ==='/' ||valor ==='.'){
+      document.getElementById('resultadoc').value += valor
+    }
+    if (valor ==='='){
+    var valor_campo = eval(document.getElementById('resultadoc').value)
+    document.getElementById('resultadoc').value = valor_campo
+    }
+  }
+  else if (tipo ==='valor'){
+    document.getElementById('resultadoc').value+= valor
+  }
+}
 function select(num) {
   //Esconde todas Div's
   $('#idade').addClass('d-none').removeClass('d-flex');
   $('#imc').addClass('d-none').removeClass('d-flex');
   $('#calc').addClass('d-none').removeClass('d-flex');
   $('#cores').addClass('d-none').removeClass('d-flex');
-
+  $('#calculadora').addClass('d-none').removeClass('d-flex');
   //Mostra Div Selecionada
   if (num == 1) {$('#idade').removeClass('d-none').addClass('d-flex');}
   if (num == 2) {$('#imc').removeClass('d-none').addClass('d-flex');}
   if (num == 3) {$('#calc').removeClass('d-none').addClass('d-flex');}
   if (num == 4) {$('#cores').removeClass('d-none').addClass('d-flex');}
-
+  if (num == 5) {$('#calculadora').removeClass('d-none').addClass('d-flex');}
 }

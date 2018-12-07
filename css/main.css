@@ -137,7 +137,6 @@ p {
 .jresumo {
     padding: 4vh 0 3vh 0;
 }
-
 .jresdiv {
     width: 80vw;
     margin: 2vh auto;
@@ -157,12 +156,12 @@ p {
             box-shadow: 0 0 5px 3px rgba(0, 0, 0, .25);
 }
 ul.timeline {
+    padding: 0px;
     list-style-type: none;
     position: relative;
 }
 ul.timeline:before {
     content: ' ';
-    background: #d4d9df;
     display: inline-block;
     position: absolute;
     left: 29px;
@@ -172,15 +171,13 @@ ul.timeline:before {
 }
 ul.timeline > li {
     margin: 20px 0;
-    padding-left: 20px;
 }
 ul.timeline > li:before {
     content: ' ';
-    background: white;
     display: inline-block;
     position: absolute;
     border-radius: 50%;
-    border: 3px solid #22c0e8;
+    border: 3px solid gradient;
     left: 20px;
     width: 20px;
     height: 20px;
@@ -227,6 +224,9 @@ ul.timeline > li:before {
 .jproj img{
     max-width: 90%;
 }
+.jproj h3{
+    font-family: 'BioRhyme';
+}
 .jcontatos {
     color: white;
     background: url(../img/jcontato.jpg);
@@ -268,7 +268,15 @@ button:focus {
     -webkit-animation: cor 60s ease infinite;
             animation: cor 60s ease infinite;
 }
-
+.modal a,.modal a:hover{
+    color: black;
+    text-decoration: none;
+}
+.modal img{;
+    width: 25px;
+    height: 25px;
+    margin: 0 3% 0 5%!important;
+}
 .style-none,.style-none:hover {
     text-decoration: none;
     color: white;
