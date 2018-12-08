@@ -238,6 +238,10 @@ ul.timeline > li:before {
 .jproj h3{
     font-family: 'BioRhyme';
 }
+.projtext{
+    width: 80%;
+    margin: 0 auto 2vh !important;
+}
 .jcontatos {
     color: white;
     background: url(../img/jcontato.jpg);
@@ -291,9 +295,6 @@ button:focus {
 .style-none,.style-none:hover {
     text-decoration: none;
     color: white;
-}
-.listra {
-    
 }
 @media(max-width:576px) {
     h1 {
