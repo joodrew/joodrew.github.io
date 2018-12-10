@@ -11,22 +11,23 @@
     <script src="jogo.js"></script>
 </head>
 
-<body onresize="boardSize()">
+<body id="app" onresize="boardSize()">
 
     <div class="painel ">
-        <div class="vidas d-flex justify-content-left ">
-aa
+        <div id="score" class="vidas d-flex justify-content-left ">
+            <p>0</p>
         </div>
         <div class="vidas d-flex justify-content-center ">
             <img id="up1" src="imagens/coracao_cheio.png">
             <img id="up2" src="imagens/coracao_cheio.png">
             <img id="up3" src="imagens/coracao_cheio.png">
         </div>
-        <div class="vidas d-flex justify-content-right ">
-aa
+        <div id="record" class="vidas d-flex justify-content-right ">
+        <p>0</p>
         </div>
     </div>
     <script>
+        frecord(nivel)  
         setInterval(function () {
             randPos()
         }, speed)

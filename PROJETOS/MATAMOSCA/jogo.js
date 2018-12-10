@@ -1,23 +1,34 @@
-
 var altura = 0
 var largura = 0
 var up = 1
-var time = 15
 var speed = 1500
+var score = 0
+var toprecord = 0
+var points = 0
 
+//nivel
 var nivel = window.location.search
-nivel = nivel.replace('?','')
-if (nivel==='geek'){
+nivel = nivel.replace('?', '')
+if (nivel === 'geek') {
     speed = 1500
-    time = 15
-}else
-if (nivel==='nerd'){
-    speed = 1000
-    time = 22
-}else
-if (nivel==='chucknorris'){
-    speed = 750
-    time = 30
+    points = 75
+} else
+    if (nivel === 'nerd') {
+        speed = 1000
+        points = 110
+    } else
+        if (nivel === 'chucknorris') {
+            speed = 750
+            points = 150
+        }
+//localstorage record
+function frecord(nivel) {
+    var record = localStorage.getItem(nivel)
+    if (record===null){record=0}
+    document.getElementById('record').innerHTML = '<p>' + record + '</p>'
+    toprecord = record
+    console.log(nivel)
+    console.log(points)
 }
 //defiine tamanho da tela
 function boardSize() {
@@ -25,6 +36,7 @@ function boardSize() {
     largura = window.innerWidth
 
     console.log('Tela', largura, altura)
+
 }
 
 boardSize()
@@ -36,8 +48,14 @@ function randPos() {
         document.getElementById('mosquito').remove()
         //verifica se deixou passar
         if (up > 3) {
+            //compara record
+
+            if (toprecord < score) {
+                localStorage.setItem(nivel, score)
+            }
+            //redireciona fim de jogo
             window.location.href = 'gameover.html'
-         }
+        }
         else {
             document.getElementById('up' + up).src = "imagens/coracao_vazio.png"
             up++
@@ -60,6 +78,12 @@ function randPos() {
     mosquito.id = 'mosquito'
     mosquito.onclick = function () {
         this.remove()
+        //pontuação
+        score += points
+        if (document.getElementById('score')) {
+            document.getElementById('score').innerHTML = '<p>' + score + '</p>'
+        }
+
     }
 
     document.body.appendChild(mosquito)
