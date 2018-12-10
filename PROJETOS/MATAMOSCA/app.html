@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="main.css">
     <script src="jogo.js"></script>
-    <script src="./screenfull/screenfull.js"></script>
 </head>
 
 <body id="app" onresize="boardSize()">
@@ -28,16 +27,11 @@
         </div>
     </div>
     <script>
-        if (screenfull.enabled) {
-            screenfull.request();
-    }
         frecord(nivel)  
         setInterval(function () {
             randPos()
         }, speed)
     </script>
-    <script>
-            </script>
 </body>
 
 </html>
