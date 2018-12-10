@@ -24,7 +24,7 @@ if (nivel === 'geek') {
 //localstorage record
 function frecord(nivel) {
     var record = localStorage.getItem(nivel)
-    if (record===null){record=0}
+    if (record === null) { record = 0 }
     document.getElementById('record').innerHTML = '<p>' + record + '</p>'
     toprecord = record
     console.log(nivel)
@@ -100,7 +100,7 @@ function randSize() {
     }
 }
 function randNpc() {
-    var classe = Math.floor(Math.random() * 3)
+    var classe = Math.floor(Math.random() * 4)
     switch (classe) {
         case 0:
             return 'imagens/mosca1.png'
@@ -108,6 +108,8 @@ function randNpc() {
             return 'imagens/mosca2.png'
         case 2:
             return 'imagens/mosca3.png'
+        case 3:
+            return 'imagens/mosca4.png'
     }
 }
 function randSide() {
