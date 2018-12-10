@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,18 +10,27 @@
     <link rel="stylesheet" href="main.css">
     <script src="jogo.js"></script>
 </head>
+
 <body onresize="boardSize()">
 
     <div class="painel ">
-        <div class="vidas d-flex justify-content-cente ">
+        <div class="vidas d-flex justify-content-left ">
+aa
+        </div>
+        <div class="vidas d-flex justify-content-center ">
             <img id="up1" src="imagens/coracao_cheio.png">
             <img id="up2" src="imagens/coracao_cheio.png">
             <img id="up3" src="imagens/coracao_cheio.png">
         </div>
+        <div class="vidas d-flex justify-content-right ">
+aa
+        </div>
     </div>
     <script>
-    setInterval(function(){
-    randPos()},1000)
+        setInterval(function () {
+            randPos()
+        }, speed)
     </script>
 </body>
+
 </html>

@@ -2,7 +2,24 @@
 var altura = 0
 var largura = 0
 var up = 1
+var time = 15
+var speed = 1500
 
+var nivel = window.location.search
+nivel = nivel.replace('?','')
+if (nivel==='geek'){
+    speed = 1500
+    time = 15
+}else
+if (nivel==='nerd'){
+    speed = 1000
+    time = 22
+}else
+if (nivel==='chucknorris'){
+    speed = 750
+    time = 30
+}
+//defiine tamanho da tela
 function boardSize() {
     altura = window.innerHeight
     largura = window.innerWidth
@@ -28,7 +45,7 @@ function randPos() {
     }
     //gera posição
     var X = Math.floor(Math.random() * largura) - 90
-    var Y = Math.floor(Math.random() * altura) - 90
+    var Y = Math.floor(Math.random() * altura) - 180
     X = X < 0 ? 0 : X
     Y = Y < 0 ? 0 : Y
     console.log('Posição', X, Y)
@@ -38,7 +55,7 @@ function randPos() {
     mosquito.src = randNpc()
     mosquito.className = randSize() + ' ' + randSide()
     mosquito.style.left = X + 'px'
-    mosquito.style.top = Y + 'px'
+    mosquito.style.top = Y + 90 + 'px'
     mosquito.style.position = 'absolute'
     mosquito.id = 'mosquito'
     mosquito.onclick = function () {
