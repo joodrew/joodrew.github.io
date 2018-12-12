@@ -2,47 +2,45 @@
 <html>
 
 <head>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>DP Revenge</title>
-		<link href="data:image/x-icon;base64,AAABAAEAEBACAAAAAACwAAAAFgAAACgAAAAQAAAAIAAAAAEAAQAAAAAAQAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADnwAAAZ8AADifAAA8nwAAPJ8AADyfAAA8gwAAPIEAADyYAAA8nAAAPJwAADycAAA8nAAAOJgAAAGBAAADgwAA"
-			rel="icon" type="image/x-icon" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="framework/bootstrap.min.css">
-		<link rel="stylesheet" href="main.css">
-		<script src="jogo.js"></script>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>DP Revenge</title>
+	<link href="data:image/x-icon;base64,AAABAAEAEBACAAAAAACwAAAAFgAAACgAAAAQAAAAIAAAAAEAAQAAAAAAQAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADnwAAAZ8AADifAAA8nwAAPJ8AADyfAAA8gwAAPIEAADyYAAA8nAAAPJwAADycAAA8nAAAOJgAAAGBAAADgwAA"
+	 rel="icon" type="image/x-icon" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="framework/bootstrap.min.css">
+	<link rel="stylesheet" href="main.css">
+	<script src="jogo.js"></script>
 </head>
 
 <body id="app" onresize="boardSize()">
 
-		<!-- INICIO -->
-		<div id="inicio" class="d-block">
-			<div class="container gameover">
-				<div class="row">
-					<div class="col">
-						<div class="d-flex justify-content-center">
-							<img class="img-fluid" src="imagens/game.png" />
-						</div>
+	<!-- INICIO -->
+	<div id="inicio" class="d-block">
+		<div class="container gameover">
+			<div class="row">
+				<div class="col">
+					<div class="d-flex justify-content-center">
+						<img class="img-fluid" src="imagens/game.png" />
 					</div>
 				</div>
-	
-				<div class="row">
-					<div class="col">
-						<div class="d-flex justify-content-center">
-							<div class="mb-2">
-								<select class="form-control " id="nivel">
-									<option value="">-- Selecione o nível --</option>
-									<option value="geek">Geek</option>
-									<option value="nerd">Nerd</option>
-									<option value="chucknorris">Chuck Norris</option>
-								</select>
-							</div>
+			</div>
+
+			<div class="row">
+				<div class="col">
+					<div class="d-flex justify-content-center">
+						<div class="mb-2">
+							<select class="form-control " id="nivel">
+								<option value="">-- Selecione o nível --</option>
+								<option value="geek">Geek</option>
+								<option value="nerd">Nerd</option>
+								<option value="chucknorris">Chuck Norris</option>
+							</select>
 						</div>
 					</div>
 				</div>
 			</div>
-	
-	
+
 			<div class="row">
 				<div class="col">
 					<div class="d-flex justify-content-center">
@@ -51,44 +49,45 @@
 				</div>
 			</div>
 		</div>
-		<!-- JOGO -->
-		<div id="jogo" class="d-none">
-			<div class="painel ">
-				<div id="score" class="vidas d-flex justify-content-left ">
-					<p>0</p>
-				</div>
-				<div class="vidas d-flex justify-content-center ">
-					<img id="up1" src="imagens/coracao_cheio.png">
-					<img id="up2" src="imagens/coracao_cheio.png">
-					<img id="up3" src="imagens/coracao_cheio.png">
-				</div>
-				<div id="record" class="vidas d-flex justify-content-right ">
-					<p>0</p>
-				</div>
+	</div>
+	<!-- JOGO -->
+	<div id="jogo" class="d-none">
+		<div class="painel ">
+			<div id="score" class="vidas d-flex justify-content-left ">
+				<p>0</p>
+			</div>
+			<div class="vidas d-flex justify-content-center ">
+				<img id="up1" src="imagens/coracao_cheio.png">
+				<img id="up2" src="imagens/coracao_cheio.png">
+				<img id="up3" src="imagens/coracao_cheio.png">
+			</div>
+			<div id="record" class="vidas d-flex justify-content-right ">
+				<p>0</p>
 			</div>
 		</div>
-		<!-- GAMEOVER -->
-		<div id="gameover" class="d-none">
-			<div class="container gameover">
-				<div class="row">
-					<div class="col">
-						<div class="d-flex justify-content-center">
-							<img class="img-fluid" src="imagens/game_over.png">
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col">
-						<div class="d-flex justify-content-center">
-							<button type="button" class="btn btn-light btn-lg" onclick="window.location.href='index.html'">TENTAR
-								DENOVO</button>
-						</div>
+	</div>
+	<!-- GAMEOVER -->
+	<div id="gameover" class="d-none">
+		<div class="container gameover">
+			<div class="row">
+				<div class="col">
+					<div class="d-flex justify-content-center">
+						<img class="img-fluid" src="imagens/game_over.png">
 					</div>
 				</div>
 			</div>
+			<div class="row">
+				<div class="col">
+					<div class="d-flex justify-content-center">
+						<button type="button" class="btn btn-light btn-lg" onclick="window.location.href='index.html'">TENTAR
+							DENOVO</button>
+					</div>
+				</div>
+			</div>
 		</div>
-		
+	</div>
+
 	<script src="framework/jquery-3.2.1.slim.min.js"></script>
-	</body>
+</body>
 
 </html>
