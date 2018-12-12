@@ -5,22 +5,8 @@ var speed = 1500
 var score = 0
 var toprecord = 0
 var points = 0
+var nivel = ''
 
-//nivel
-var nivel = window.location.search
-nivel = nivel.replace('?', '')
-if (nivel === 'geek') {
-    speed = 1500
-    points = 75
-} else
-    if (nivel === 'nerd') {
-        speed = 1000
-        points = 110
-    } else
-        if (nivel === 'chucknorris') {
-            speed = 750
-            points = 150
-        }
 //localstorage record
 function frecord(nivel) {
     var record = localStorage.getItem(nivel)
@@ -41,6 +27,55 @@ function boardSize() {
 
 boardSize()
 
+
+function play(){
+    //gera posição aleatoria
+    iniciarJogo()
+   playrandom = setInterval(function () {
+        randPos()
+    }, speed)
+}
+
+function iniciarJogo() {
+    nivel = document.getElementById('nivel').value
+    if (nivel === '') {
+        alert('Selecione um nível para iniciar o jogo')
+        return false
+    }   
+    setNivel(nivel)
+    frecord(nivel)
+}
+//nivel
+function setNivel(nivel){ 
+    if (nivel === 'geek') {
+        speed = 1500
+        points = 75
+    } else
+        if (nivel === 'nerd') {
+            speed = 1000
+            points = 110
+        } else
+            if (nivel === 'chucknorris') {
+                speed = 750
+                points = 150
+            }
+    }
+function select(menu) {
+    //Esconde todas Div's
+    $('#inicio').addClass('d-none').removeClass('d-block');
+    $('#jogo').addClass('d-none').removeClass('d-block');
+    $('#gameover').addClass('d-none').removeClass('d-block');
+    //Mostra Div Selecionada
+    if (menu === 'jogar'){
+        $('#jogo').addClass('d-block').removeClass('d-none');
+        play()
+    }
+    if (menu === 'gameover'){
+        $('#gameover').addClass('d-block').removeClass('d-none');
+        
+        document.getElementById('mosquito').remove()
+    }
+}
 function randPos() {
 
     //remover anterior
@@ -54,7 +89,8 @@ function randPos() {
                 localStorage.setItem(nivel, score)
             }
             //redireciona fim de jogo
-            window.location.href = 'gameover.html'
+            clearInterval(playrandom)
+            select('gameover')
         }
         else {
             document.getElementById('up' + up).src = "imagens/coracao_vazio.png"
@@ -83,7 +119,6 @@ function randPos() {
         if (document.getElementById('score')) {
             document.getElementById('score').innerHTML = '<p>' + score + '</p>'
         }
-
     }
 
     document.body.appendChild(mosquito)
