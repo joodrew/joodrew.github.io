@@ -26,7 +26,7 @@ int header()
     printf("            JOELSON FELIPE FIRMINO                    \n");
     printf(" _____________________________________________________\n");
 }
-int footer ()
+int footer()
 {
     getch();
 }
@@ -44,13 +44,13 @@ int main()
     printf(" 0  -  SAIR                                           \n");
     printf(" _____________________________________________________\n");
     int menu;
-    while(menu)
+    while (menu)
     {
         printf(" SELECIONE UMA TAREFA(digite o valor): ");
-        scanf("%d",&menu);
-        if ((menu > 6) || (menu <0))
+        scanf("%d", &menu);
+        if ((menu > 6) || (menu < 0))
             main();
-        switch(menu)
+        switch (menu)
         {
         case 0:
             exit(0);
@@ -65,7 +65,7 @@ int main()
             apa3();
             break;
         case 4:
-            main();
+            lotofacil();
             break;
         case 5:
             matriz();

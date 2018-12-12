@@ -25,12 +25,12 @@ MENU:
         scanf("%d",&menu);
         if ((menu > 7) || (menu <0))
         {
-            apa3();
+            matriz();
         }
         switch(menu)
         {
         case 0:
-            apa3();
+            main();
             break;
         case 1:
             inserir();

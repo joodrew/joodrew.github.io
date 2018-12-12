@@ -12,9 +12,9 @@ int lotofacil()
     baixo();
     printf("\n");
     tecla=getch();                  //pega o valor da tecla pressionada
-    if (tecla==27)                  //tecla esc em ASCII é 27
+    if (tecla==27)                  //tecla esc em ASCII ï¿½ 27
     {                               //
-        apa3();
+        main();
     }
     else                            //se tecla nao for esc
     {                               //
@@ -29,7 +29,7 @@ int loteria()
     {
         num=rand()%25;
         temp=list[num];
-        for(j=i; j>=-1; j--)        //verificação de numero repetido
+        for(j=i; j>=-1; j--)        //verificaï¿½ï¿½o de numero repetido
         {
             if (temp==loto[j])      //se repetido
             {                       //
@@ -42,28 +42,28 @@ int loteria()
         }
         if(key==1)                  //se chave = 1
         {                           //
-            i--;                    //posição da array - 1 (para manter o loop)
-            key--;                  //zera o numero chave da repetição
+            i--;                    //posiï¿½ï¿½o da array - 1 (para manter o loop)
+            key--;                  //zera o numero chave da repetiï¿½ï¿½o
         }
     }
 }
 int ordenar()
 {
     int i, j, min, troca;
-    for (i = 0; i < tam; i++)       //1º loop posição da array para troca
+    for (i = 0; i < tam; i++)       //1ï¿½ loop posiï¿½ï¿½o da array para troca
     {
-        min = i;                    //min recebe posição atual
-        for (j = i; j < tam; j++)   //2º loop encontrar o menor valor
+        min = i;                    //min recebe posiï¿½ï¿½o atual
+        for (j = i; j < tam; j++)   //2ï¿½ loop encontrar o menor valor
         {
             if(loto[j] < loto[min]) //se valor da array[contador] < array[minimo]
             {                       //
-                min = j;            //minimo recebe posição do contador
+                min = j;            //minimo recebe posiï¿½ï¿½o do contador
             }
         }
-        if (i != min)               //se posição para troca for diferente do minimo depois do 2º loop
+        if (i != min)               //se posiï¿½ï¿½o para troca for diferente do minimo depois do 2ï¿½ loop
         {                           //
-            troca = loto[i];        //troca recebe o valor da array[posição atual]
-            loto[i] = loto[min];    //array[posição atual] recebe o valor array[minimo]
+            troca = loto[i];        //troca recebe o valor da array[posiï¿½ï¿½o atual]
+            loto[i] = loto[min];    //array[posiï¿½ï¿½o atual] recebe o valor array[minimo]
             loto[min] = troca;      //array[minimo] recebe valor troca
         }
     }
@@ -71,9 +71,9 @@ int ordenar()
 int exibirl(int loto[],int tam)
 {
     int i;
-    for (i=0; i<tam; i++)           //contador para definir posição na array
+    for (i=0; i<tam; i++)           //contador para definir posiï¿½ï¿½o na array
     {                               //
-        printf("%i ",loto[i]);      //imprimi na tela arra[posição atual]
+        printf("%i ",loto[i]);      //imprimi na tela arra[posiï¿½ï¿½o atual]
     }
 }
 int cima(){

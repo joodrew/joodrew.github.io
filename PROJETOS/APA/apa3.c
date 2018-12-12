@@ -7,8 +7,6 @@
       printf(" 1  -  GERADOR DE NUMEROS                             \n");
       printf(" 2  -  ANTERIOR E POSTERIOR                           \n");
       printf(" 3  -  VIAGEM - TEMPO E CUSTO                         \n");
-      printf(" 4  -  MATRIZ 3X3                         \n");
-      printf(" 5  -  LOTERIA                         \n");
       printf(" 0  -  INICIO                                          \n");
       printf(" _____________________________________________________\n");
       int menu;
@@ -16,7 +14,7 @@
       {
           printf(" SELECIONE UMA TAREFA(digite o valor): ");
           scanf("%d",&menu);
-          if ((menu > 5) || (menu <0))
+          if ((menu > 3) || (menu <0))
           {
               apa3();
           }
@@ -35,14 +33,6 @@
               break;
           case 3:
               viagem();
-              apa3();
-              break;
-          case 4:
-              matriz();
-              apa3();
-              break;
-          case 5:
-              lotofacil();
               apa3();
               break;
           }
