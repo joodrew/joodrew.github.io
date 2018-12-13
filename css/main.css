@@ -309,9 +309,12 @@ button:focus {
     text-decoration: none;
     color: white;
 }
+.nome{
+    padding-bottom: 6vh;
+}
 @media(max-width:576px) {
     h1 {
-        font-size: 1.5rem !important;
+        font-size: 1.2rem !important;
     }
     .jcontatos{        
     text-align: center;
@@ -339,6 +342,10 @@ button:focus {
     .jcontatos{
         text-align: left;
     }
+    
+.nome{
+    padding-bottom: 0vh;
+}
 }
 
 /* MD*/
