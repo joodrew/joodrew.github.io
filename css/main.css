@@ -35,6 +35,7 @@ p {
 ::-webkit-scrollbar {
     display: none;
 }
+
 .navbar {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -42,7 +43,19 @@ p {
             flex-direction: column;
     text-align: center;
 }
-
+/*DIV*/
+.nmobi li a{
+    padding: 0.2rem  0.2rem;
+}
+/*UL*/
+#nmobi{
+    margin: 0 5vw !important;
+    font-size: 2.5vw; 
+}
+#nmobi img{
+    width: 5vw;
+    height: 100%;
+}
 .navbar-toggler-icon {
     background-image: url(../img/nav-arrow-down.png) !important;
     height: 2vh !important;
