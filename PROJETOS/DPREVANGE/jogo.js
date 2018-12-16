@@ -41,9 +41,10 @@ function iniciarJogo() {
     if (nivel === '') {
         alert('Selecione um nível para iniciar o jogo')
         return false
-    }   
+    }   else {
     setNivel(nivel)
     frecord(nivel)
+    }
 }
 //nivel
 function setNivel(nivel){ 

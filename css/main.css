@@ -2,6 +2,9 @@
 h1, .navbar-brand {
     font-family: 'Monoton', cursive !important;
 }
+html,body{
+    height: 95%;
+}
 :root{
     --cor1: #011621;
     --cor2: #040723;

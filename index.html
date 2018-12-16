@@ -16,15 +16,15 @@
   <link rel="stylesheet" href="./framework/slick/slick.css" />
   <link rel="stylesheet" href="./framework/slick/slick-theme.css" />
   <link rel="stylesheet" href="./framework/font-awesome/css/all.css">
-<!--  Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-130679820-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!--  Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130679820-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'UA-130679820-1');
-</script>
+    gtag('config', 'UA-130679820-1');
+  </script>
 
 </head>
 
@@ -38,8 +38,8 @@
     </button>
     <div class="collapse navbar-collapse " id="navbarNav">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">INICIO <span class="sr-only">(current)</span></a>
+        <li class="nav-item ">
+          <a class="nav-link" href="#">INICIO </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#res">RESUMO</a>
@@ -60,23 +60,23 @@
   <!--NavbarMobile -->
 
   <nav style="padding: 0.3rem  0.2rem 0.2rem 0.2rem" class="nmobi navbar d-block d-md-none fixed-bottom cima navbar-expand-lg navbar-dark gradiente bg-dark">
-      <ul id="nmobi" class="navbar-nav flex-row ml-auto justify-content-between">
-        <li class="nav-item active">
-          <a class="nav-link" href="#"><img src="./img/n-home.png">INICIO </span></a>
-        </li>
-        <li class="nav-item" >
-          <a class="nav-link" href="#res"><img src="./img/n-resumo.png">RESUMO</a>
-        </li>
-        <li class="nav-item" >
-          <a class="nav-link" href="#cer"><img src="./img/n-certificados.png">CERTIFICADOS</a>
-        </li>
-        <li class="nav-item" >
-          <a class="nav-link" href="#pro"><img src="./img/n-projetos.png">PROJETOS</a>
-        </li>
-        <li class="nav-item" >
-          <a class="nav-link" href="#con"><img src="./img/n-contatos.png">CONTATOS</a>
-        </li>
-      </ul>
+    <ul id="nmobi" class="navbar-nav flex-row ml-auto justify-content-between">
+      <li class="nav-item ">
+        <a class="nav-link" href="#"><img src="./img/n-home.png">INICIO</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#res"><img src="./img/n-resumo.png">RESUMO</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#cer"><img src="./img/n-certificados.png">CERTIFICADOS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#pro"><img src="./img/n-projetos.png">PROJETOS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#con"><img src="./img/n-contatos.png">CONTATOS</a>
+      </li>
+    </ul>
   </nav>
 
   <!--HEADER-->
@@ -94,21 +94,24 @@
     <div class="jresdiv conteiner text-left">
       <div class="row ">
         <div class="col-md-1"></div>
-        <div class=" jfotod col-xs-12  col-md-5 ">
+        <div class=" jfotod col-xs-12  col-md-3 ">
           <figure class="figure">
-            <img src="./img/minhafoto.jpg" class="figure-img img-fluid rounded" alt="Uma foto minha bem bonita.">
+            <img style="
+            -moz-transform: scaleX(-1);
+            -o-transform: scaleX(-1);
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);"
+              src="./img/minhafoto.jpg" class="figure-img img-fluid rounded" alt="Uma foto minha bem bonita.">
           </figure>
         </div>
-        <div class="col-xs-12 col-md-6">
-
-
+        <div class="col-xs-12 col-md-7">
           <p>Meu nome é Joelson Felipe Firmino, tenho 2 lindos filhos e uma linda esposa.
-            <br>Sou um profissional competente e de confiança, comprometido com o trabalho de qualidade.<br>Versátil na
-            resolução de problemas maximizando recursos.<br>Entusiasmado, confiável e
-            auto motivado.<br>Hábil em lidar com o público, com diplomacia e profissionalismo.<br>Capacidade de
-            adaptação a
-            novos equipamentos e tecnologias.<br>Excelentes capacidades de análise, escrita, raciocínio e de tecnologia
-            da informação.
+            <br>Sou um profissional competente e de confiança, comprometido com o trabalho de qualidade.
+            <br>Versátil na resolução de problemas maximizando recursos.
+            <br>Entusiasmado, confiável e auto motivado.
+            <br>Hábil em lidar com o público, com diplomacia e profissionalismo.
+            <br>Capacidade de adaptação a novos equipamentos e tecnologias.
+            <br>Excelentes capacidades de análise, escrita, raciocínio e de tecnologia da informação.
           </p>
         </div>
       </div>
@@ -160,35 +163,34 @@
     <section class="jcert">
       <div>
         <!--HTML-->
-        <a href="https://www.sololearn.com/Certificate/1014-9145968/pdf/" target="_blank">
+        <a href="./CERTIFICADOS/HTML Fundamentals.pdf" target="_blank">
           <img alt="Certificado HTML Fundamentals" src="./img/c-html.png">
-
         </a>
       </div>
       <div>
         <!--JAVASCRIPT -->
-        <a href="https://www.sololearn.com/Certificate/1024-9145968/pdf/" target="_blank">
+        <a href="./CERTIFICADOS/JavaScript Tutorial.pdf" target="_blank">
           <img alt="Certificado JavaScript Tutorial" src="./img/c-js.png">
 
         </a>
       </div>
       <div>
         <!--PHP -->
-        <a href="https://www.sololearn.com/Certificate/1059-9145968/pdf/" target="_blank">
+        <a href="./CERTIFICADOS/PHP Tutorial.pdf" target="_blank">
           <img alt="Certificado PHP Tutorial" src="./img/c-php.png">
 
         </a>
       </div>
       <div>
         <!--CSS -->
-        <a href="https://www.sololearn.com/Certificate/1023-9145968/pdf/" target="_blank">
+        <a href="./CERTIFICADOS/CSS Fundamentals.pdf" target="_blank">
           <img alt="Certificado CSS Fundamentals" src="./img/c-css.png">
 
         </a>
       </div>
       <div>
         <!--SQL -->
-        <a href="https://www.sololearn.com/Certificate/1060-9145968/pdf/" target="_blank">
+        <a href="./CERTIFICADOS/SQL Fundamentals.pdf" target="_blank">
           <img alt="Certificado SQL Fundamentals" src="./img/c-sql.png">
 
         </a>
@@ -197,6 +199,13 @@
         <!--RESPONSIVE WEB DESIGN -->
         <a href="https://www.freecodecamp.org/certification/jff/responsive-web-design" target="_blank">
           <img alt="Certificado Responsive Web Design" src="./img/c-wdr.png">
+
+        </a>
+      </div>
+      <!--ITE CISCO -->
+      <div>
+        <a href="./CERTIFICADOS/IT Essentials Certficado.pdf" target="_blank">
+          <img alt="IT Essentials" src="./img/c-cisco.png">
 
         </a>
       </div>
@@ -219,28 +228,33 @@
     </section><br>
     <button type="button" class="btn-light btn btn-lg  bio" data-toggle="modal" data-target="#modalcert">Ver Todos
     </button>
-  </div>
-  <!-- MODAL CERTIFICADOS -->
-  <div class="modal fade" id="modalcert" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title " style="font-family:'monoton',cursive;" id="exampleModalLongTitle">CERTIFICADOS</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="row"><img src="./img/c-css.png"><a href="#">CSS Fundamentals</a></div>
-          <div class="row"><img src="./img/c-js.png"><a href="#">JavaScript Tutorial</a></div>
-          <div class="row"><img src="./img/c-php.png"><a href="#">PHP Tutorial</a></div>
-          <div class="row"><img src="./img/c-sql.png"><a href="#">SQL Fundamentals</a></div>
-          <div class="row"><img src="./img/c-wdr.png"><a href="#">Web Design Responsive</a></div>
+    <!-- MODAL CERTIFICADOS -->
+    <div class="modal fade" id="modalcert" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title " style="font-family:'monoton',cursive; color: black;">CERTIFICADOS</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row"><img src="./img/c-css.png"><a href="./CERTIFICADOS/CSS Fundamentals.pdf">CSS Fundamentals</a></div>
+            <div class="row"><img src="./img/c-js.png"><a href="./CERTIFICADOS/JavaScript Tutorial.pdf">JavaScript
+                Tutorial</a></div>
+            <div class="row"><img src="./img/c-php.png"><a href="./CERTIFICADOS/PHP Tutorial.pdf">PHP Tutorial</a></div>
+            <div class="row"><img src="./img/c-sql.png"><a href="./CERTIFICADOS/SQL Fundamentals.pdf">SQL Fundamentals</a></div>
+            <div class="row"><img src="./img/c-wdr.png"><a href="https://www.freecodecamp.org/certification/jff/responsive-web-design">Web
+                Design Responsive</a></div>
+            <div class="row"><img src="./img/c-cisco.png"><a href="./CERTIFICADOS/IT Essentials Certficado.pdf">IT
+                Essentials - Certificado </a><a href="./CERTIFICADOS/IT Essentials Carta.pdf"> - Carta</a></div>
+          </div>
         </div>
       </div>
     </div>
   </div>
+
   <!--PROJETOS-->
   <div id="pro" class="jprojetos carousel cima container-fluid text-center">
 
@@ -250,7 +264,8 @@
         <img src="./img/p-js.png" alt="ALT NAME" class="img-responsive" />
         <div class="projtext">
           <h3>Brincando com JS</h3>
-          <p>Trabalhando com algumas propriedades do js.</p>
+          <p>Manipulando DOM com algumas propriedades simples muito utilizadas em JavaScript juntamente com jQuery e
+            Bootstrap.</p>
           <br>
           <p><br><a target="_blank" href="./PROJETOS/JS/index.html" class="gradiente btn btn-primary btn-block">Abrir</a>
           </p>
@@ -260,7 +275,8 @@
         <img src="./img/p-c.png" alt="ALT NAME" class="img-responsive" />
         <div class="projtext">
           <h3>APA</h3>
-          <p>Utilizando C em 30+ mini projetos, utilizando Vetores, Matrizes, Struct.</p>
+          <p>Utilizando C em 30+ mini projetos, utilizando Vetores, Matrizes, Struct e bibliotecas para execução de
+            funções especificas.</p>
           <br><br>
           <p><a href="./PROJETOS/APA/APA.zip" class="gradiente btn btn-primary btn-block">Abrir</a>
           </p>
@@ -270,9 +286,10 @@
         <img src="./img/p-dp.png" alt="ALT NAME" class="img-responsive" />
         <div class="projtext">
           <h3>DP Revange</h3>
-          <p>A vingança da DP é um jogo baseado em JavaScript estilo mata-mosca em homenagem a alguns professores da FATEC - Americana</p>
+          <p>A vingança da DP é um jogo baseado em JavaScript estilo mata-mosca em homenagem a alguns professores da
+            FATEC - Americana</p>
           <br><br>
-          <p><a href="./PROJETOS/DPREVANGE/index.html" class="gradiente btn btn-primary btn-block" >Abrir</a>
+          <p><a href="./PROJETOS/DPREVANGE/index.html" class="gradiente btn btn-primary btn-block">Abrir</a>
           </p>
         </div>
       </div>
@@ -311,7 +328,7 @@
       </div>
     </div>
   </div>
-  <div style="margin-bottom: 3vh; " class="container-fluid  text-center">
+  <div style="margin-bottom: 3vh; margin-top: 1vh;" class="container-fluid  text-center">
     <div class="row">
       <div class="col-12 fa-2x jnome">
         <a href="https://www.facebook.com/joodrew"><i class="fab fa-facebook"></i></a>
@@ -322,7 +339,7 @@
       </div>
     </div>
     <div class="row">
-      <div  class="nome col-12">
+      <div class="nome col-12">
         <h1 class="jnome">JOELSON FELIPE FIRMINO</h1>
       </div>
       <div class="row d-block d-md-none">
