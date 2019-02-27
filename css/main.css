@@ -233,6 +233,7 @@ ul.timeline > li:before {
             box-shadow: 5px 5px 5px rgba(0, 0, 0, .25);
     margin: 5vh 0;
 }
+}
 .jprojetos {
     padding: 3vh 0 1.5vh 0 !important;
 }
