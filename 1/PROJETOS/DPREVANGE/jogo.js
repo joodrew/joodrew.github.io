@@ -66,8 +66,13 @@ function select(menu) {
     $('#inicio').addClass('d-none').removeClass('d-block');
     $('#jogo').addClass('d-none').removeClass('d-block');
     $('#gameover').addClass('d-none').removeClass('d-block');
+    //Verific nivel selecionado
+    var selNiv = document.getElementById("nivel").value;
+    if (selNiv == "" ){
+        location.reload();
+    }
     //Mostra Div Selecionada
-    if (menu === 'jogar'){
+    if (menu === 'jogar' ){
         $('#jogo').addClass('d-block').removeClass('d-none');
         play()
     }
