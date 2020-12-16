@@ -93,6 +93,8 @@ function randPos() {
 
             if (toprecord < score) {
                 localStorage.setItem(nivel, score)
+             //acertou tocar som
+           new SomDeAcerto('http://soundfxcenter.com/television/the-simpsons/8d82b5_Homer_Simpson_Doh_Sound_Effect.mp3').play()
             }
             //redireciona fim de jogo
             clearInterval(playrandom)
