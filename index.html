@@ -30,10 +30,11 @@
 
 </head>
 
-<body>
+<body  onload="modalredirecionar()" >
   <!--NAV-->
   <nav class="navbar baixo navbar-expand-lg navbar-dark gradiente bg-dark">
-    <a class="navbar-brand" href="#">JOELSON FELIPE FIRMINO</a>
+    <a class="navbar-brand" href="#">JOELSON FELIPE FIRMINO</a> 
+    <a  style="color:red; align: center;" href="https://jff.vercel.app">Ir para pagina Atualizada!</a> 
     <button class="navbar-toggler d-none d-md-flex d-lg-none " type="button" data-toggle="collapse"
       data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -59,7 +60,7 @@
     </div>
   </nav>
 
-  <!--NavbarMobile -->
+  <!--NavbarMobile->
 
   <nav style="padding: 0.3rem  0.2rem 0.2rem 0.2rem"
     class="nmobi navbar d-block d-md-none fixed-bottom cima navbar-expand-lg navbar-dark gradiente bg-dark">
@@ -108,7 +109,7 @@
           </figure>
         </div>
         <div class="col-xs-12 col-md-7">
-          <p>Meu nome é Joelson Felipe Firmino, tenho 2 lindos filhos.
+          <p>Meu nome é Joelson Felipe Firmino, tenho 3 lindos filhos.
             <br>Sou um profissional competente e de confiança, comprometido com o trabalho de qualidade.
             <br>Tambem versátil na resolução de problemas maximizando recursos.
             <br>Muito entusiasmado, confiável e auto motivado.
@@ -265,7 +266,7 @@
             <div class="row"><img src="./img/c-cisco.png"><a href="./1/CERTIFICADOS/IT Essentials Certficado.pdf">IT
                 Essentials </a><a href="./1/CERTIFICADOS/IT Essentials Carta.pdf"> - Carta</a></div>
             <div class="row"><img src="./img/c-aa.png"><a
-                href="./1/CERTIFICADOS/Administração com Informatica Basica - Certificado.jpeg.jpeg">
+                href="./1/CERTIFICADOS/Administração com Informatica Basica - Certificado.jpegs">
                 Assistente Administrativo </a><a
                 href="./1/CERTIFICADOS/Administração com Informatica Basica - Conteudo Programatico.jpeg">
                 - Carta</a></div>
@@ -282,7 +283,7 @@
 
   <!--PROJETOS-->
   <div id="pro" class="jprojetos carousel cima container-fluid text-center">
-
+    <br>
     <h1> Projetos</h1>
     <section class="jproj">
       <div>
@@ -332,7 +333,7 @@
       </div>
     </section>
     <button type="button" class="gradiente btn btn-lg btn-primary bio"><a class="style-none" target="_blank"
-        href="https://github.com/joodrew/joodrew.github.io/tree/master/PROJETOS">Mais
+        href="https://github.com/joodrew/joodrew.github.io/tree/master/1/PROJETOS">Mais
         Projetos</a></button>
   </div>
   <div class="baixo container-fluid"><br></div>
@@ -356,7 +357,7 @@
         <br>
         <i class="fas fa-envelope">
           <a href="mailto:joelson.firmino@fatec.sp.gov.br?subject=Que%20tal%20um%20Café">
-            <p> joelson.firmino@fatec.sp.gov.br</p>
+            <p>jo.felipe.ti@gmail.com</p>
           </a>
         </i>
       </div>
@@ -372,7 +373,7 @@
         <a href="https://www.facebook.com/joodrew"><i class="fab fa-facebook"></i></a>
         <a href="https://www.linkedin.com/in/jffirmino/"><i class="fab fa-linkedin"></i></a>
         <a href="https://github.com/joodrew/"><i class="fab fa-github"></i></a>
-        <a href="https://api.whatsapp.com/send?phone=5519988537390&text=Ola%2C%20estava%20esperando%20sua%20mensagem!"><i
+        <a href="https://api.whatsapp.com/send?phone=5519988537390&text=Ola%2C%20tudo%20bem?%20Eu%20sou"><i
             class="fab fa-whatsapp"></i></a>
       </div>
     </div>
@@ -385,7 +386,41 @@
       </div>
     </div>
   </div>
+  
 
+  <!--MODAL REDIRECIONAMENTO-->
+  <script>
+    function modalredirecionar() {
+      $('#modalredi').modal('toggle')
+    }
+    </script>
+  <div class="modal fade show" id="modalredi" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="margin:auto">
+        <h5 class="modal-title " style="color: black;">PAGINA DESCONTINUADA!</h5>
+        
+      </div>
+      <div class="modal-body">
+
+        Olá, tudo bem?
+        Sabia que estou com uma pagina mais moderna?
+      <i>
+        <p>Você pode fechar este modal e continuar vendo esta pagina!</p>
+        <br><p>Escolhendo continuar você sera redirecionado para o dominio <strong><a href="https://jff.vercel.app"> jff.vercel.app</strong></a>!</p>
+      </i>
+      </div>
+      <div class="modal-body" style="margin:auto">
+
+        
+<button  data-dismiss="modal" aria-label="Close" type="button" class="btn btn-danger">Fechar</button>
+<a type="button" style="color: white;" class="btn btn-success" href="https://jff.vercel.app">Continuar</a>
+
+      </div>
+    </div>
+  </div>
+</div>
   <!--FRAMEWORK-->
   <script src="./framework/jquery/jquery-3.2.1.slim.min.js" type="text/javascript"></script>
   <script src="./framework/popper/popper.min.js" type="text/javascript"></script>
